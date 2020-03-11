@@ -1,0 +1,45 @@
+.firstSlide {
+  background-image: url("../images/carousel_image1.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  /* 정부가 사업비를 지원합니다 */
+  display: none;
+}
+
+.secondSlide {
+  background-image: url("../images/carousel_image2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.thridSlide {
+  background-image: url("../images/carousel_image3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fourthSlide {
+  background-image: url("../images/carousel_image4.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.title {
+  /* position: absolute; */
+  margin-top: 0;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  color: #ffffff;
+}
+.subtitle {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Noto Sans KR;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
