@@ -1,5 +1,4 @@
 .fp-section {
-  /* text-align: center; */
 }
 .test1 {
   object-fit: contain;
@@ -25,7 +24,7 @@
 
 .fp-slidesNav.fp-bottom {
   display: flex;
-  bottom: 30px;
+  top: 1px;
   align-items: center;
   justify-content: center;
 }

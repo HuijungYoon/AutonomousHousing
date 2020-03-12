@@ -1,6 +1,7 @@
 import React from "react";
 import "./CarouselSection.css";
 import cn from "classnames";
+// import Scroll from "../images/mousescroll.svg";
 const sectionOneData = [
   {
     id: 1,
@@ -33,15 +34,21 @@ const sectionOneData = [
   }
 ];
 
-export const secionOneList = sectionOneData.map(x => {
-  console.log(x.className);
+export const secionOneList = sectionOneData.map((x, { fullpage }) => {
   return (
     <>
       <div className={cn("slide", x.className)}>
         <img src={require("../images/logo.png")} className="logo" alt="logo" />
-        <span className={cn("slid", "title")}>{x.title}</span>
-        <span className={cn("slid", "subtitle")}>{x.subTitle}</span>
-        <img src={require("../images/mousescrolldown.png")} alt="logo" />
+        <div className="slide-flex">
+          <span className={cn("slid", "title")}>{x.title}</span>
+          <span className={cn("slid", "subtitle")}>{x.subTitle}</span>
+          <img
+            src={require("../images/mousescroll.svg")}
+            className="mouseScrollDown"
+            alt="mouse"
+          />
+          {/* <Scroll /> */}
+        </div>
       </div>
     </>
   );

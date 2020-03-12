@@ -17,21 +17,30 @@ function App() {
       <ReactFullpage
         scrollOverflow={true}
         // navigation={true}
-        slidesNavigation={true}
+        // slidesNavigation={true}
         slidesNavPosition="bottom"
         // sectionsColor={["orange", "purple", "green"]}
         onLeave={onLeave}
         controlArrows={false}
         afterLoad={afterLoad}
         render={({ state, fullpageApi }) => {
+          console.log("render prop change", fullpageApi);
+
+          const moveRightAutoPlay = () => {
+            setInterval(() => {
+              fullpageApi.moveSlideRight();
+            }, 5000);
+          };
+
           const moveTo = () => {
-            // fullpageApi.moveTo(1, 0);
-            fullpageApi.moveSlideRight();
+            fullpageApi.moveTo(1, 0);
           };
 
           return (
             <div id="fullpage-wrapper">
-              <div className="section">{secionOneList}</div>
+              <div className="section" onLoad={moveRightAutoPlay}>
+                {secionOneList}
+              </div>
               <div className="section">
                 <h3>Section 3</h3>
 
@@ -41,10 +50,12 @@ function App() {
           );
         }}
         afterRender={({ fullpageApi }) => {
-          setInterval(() => {
-            console.log(fullpageApi);
-            // fullpageApi.moveTo(1, 0);
-          }, 3000);
+          console.log(fullpageApi);
+          // console.log(fullpageApi.moveSlideRight);
+          // setInterval(() => {
+          //   console.log(fullpageApi);
+          //   // fullpageApi.moveTo(1, 0)/
+          // }, 3000);
         }}
       />
     </>
