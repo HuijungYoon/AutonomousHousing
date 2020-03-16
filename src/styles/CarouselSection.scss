@@ -1,3 +1,4 @@
+@import "utils";
 .firstSlide {
   background-image: url("../images/carousel_image1.png");
   background-repeat: no-repeat;
@@ -59,4 +60,10 @@
 
 .mouseScrollDown {
   margin-top: 1em;
+}
+
+.chat {
+  position: absolute;
+  top: 950px;
+  margin-left: 1770px;
 }

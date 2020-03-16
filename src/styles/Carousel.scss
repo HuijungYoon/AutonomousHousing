@@ -1,0 +1,139 @@
+@import "utils";
+.firstSlide {
+  background-image: url("../images/carousel_image1.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  width: 1440px;
+  @include media("<huge") {
+    width: 1024px;
+  }
+  @include media("<large") {
+    width: 768px;
+  }
+  @include media("<medium") {
+    width: 90%;
+  }
+}
+
+.secondSlide {
+  background-image: url("../images/carousel_image2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1440px;
+  @include media("<huge") {
+    width: 1024px;
+  }
+  @include media("<large") {
+    width: 768px;
+  }
+  @include media("<medium") {
+    width: 90%;
+  }
+}
+.thridSlide {
+  background-image: url("../images/carousel_image3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1440px;
+  @include media("<huge") {
+    width: 1024px;
+  }
+  @include media("<large") {
+    width: 768px;
+  }
+  @include media("<medium") {
+    width: 90%;
+  }
+}
+.fourthSlide {
+  background-image: url("../images/carousel_image4.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1440px;
+  @include media("<huge") {
+    width: 1024px;
+  }
+  @include media("<large") {
+    width: 768px;
+  }
+  @include media("<medium") {
+    width: 90%;
+  }
+}
+
+// .slide-flex {
+//   @include place-at-center();
+
+//   width: 1440px;
+
+//   @include media("<huge") {
+//     width: 1024px;
+//   }
+//   @include media("<large") {
+//     width: 768px;
+//   }
+
+//   @include media("<medium") {
+//     width: 90%;
+//   }
+// }
+// .slide-flex {
+//   margin-bottom: 0%;
+// }
+.logo {
+  position: absolute;
+  top: 30px;
+  margin-left: -12%;
+  /* left: 60px; */
+  /* right: 10px; */
+}
+
+.title {
+  /* position: absolute; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  color: #ffffff;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);
+  @include media("<huge") {
+    font-size: 46px;
+  }
+  @include media("<large") {
+    font-size: 36px;
+  }
+
+  @include media("<medium") {
+    font-size: 18px;
+  }
+}
+.subtitle {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 1rem;
+  font-family: Noto Sans KR;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);
+  //   @include media("<huge") {
+  //     font-size: 46px;
+  //   }
+  @include media("<large") {
+    // font-size: 36px;
+  }
+
+  @include media("<medium") {
+    font-size: 10px;
+  }
+}
+.mouseScrollDown {
+  margin-top: 1em;
+}
+
+.chat {
+  position: absolute;
+  //margin-bottom: 50%;
+  margin-top: -2.3%;
+  margin-left: 10%;
+}

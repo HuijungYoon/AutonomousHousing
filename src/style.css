@@ -1,5 +1,16 @@
 .fp-section {
+  text-align: center;
 }
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: bottom;
+  width: 100%;
+  height: 100%;
+}
+.slide-flex .chat {
+  margin-left: 50%;
+}
+
 .test1 {
   object-fit: contain;
 }

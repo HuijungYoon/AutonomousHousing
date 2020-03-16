@@ -3,7 +3,8 @@ import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverf
 import ReactFullpage from "@fullpage/react-fullpage";
 import "./style.css";
 import CarouselSection, { secionOneList } from "./sections/CarouselSection";
-
+import FirstSection from "./sections/FirstSection";
+import SecondSection from "./sections/SecondSection";
 function App() {
   const onLeave = (origin, destination, direction) => {
     console.log("Leaving section " + origin.index);
@@ -17,45 +18,28 @@ function App() {
       <ReactFullpage
         scrollOverflow={true}
         // navigation={true}
-        // slidesNavigation={true}
+        slidesNavigation={true}
         slidesNavPosition="bottom"
         // sectionsColor={["orange", "purple", "green"]}
         onLeave={onLeave}
         controlArrows={false}
         afterLoad={afterLoad}
         render={({ state, fullpageApi }) => {
-          console.log("render prop change", fullpageApi);
-
           const moveRightAutoPlay = () => {
             setInterval(() => {
               fullpageApi.moveSlideRight();
-            }, 5000);
-          };
-
-          const moveTo = () => {
-            fullpageApi.moveTo(1, 0);
+            }, 9000);
           };
 
           return (
             <div id="fullpage-wrapper">
               <div className="section" onLoad={moveRightAutoPlay}>
-                {secionOneList}
+                {CarouselSection()}
               </div>
-              <div className="section">
-                <h3>Section 3</h3>
-
-                <button onClick={moveTo}>Move top</button>
-              </div>
+              <div className="section">{FirstSection()}</div>
+              {/* <div className="section">{SecondSection()}</div> */}
             </div>
           );
-        }}
-        afterRender={({ fullpageApi }) => {
-          console.log(fullpageApi);
-          // console.log(fullpageApi.moveSlideRight);
-          // setInterval(() => {
-          //   console.log(fullpageApi);
-          //   // fullpageApi.moveTo(1, 0)/
-          // }, 3000);
         }}
       />
     </>
