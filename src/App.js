@@ -5,6 +5,7 @@ import "./style.css";
 import CarouselSection, { secionOneList } from "./sections/CarouselSection";
 import FirstSection from "./sections/FirstSection";
 import SecondSection from "./sections/SecondSection";
+import ThridSection from "./sections/ThridSection";
 function App() {
   const onLeave = (origin, destination, direction) => {
     console.log("Leaving section " + origin.index);
@@ -37,7 +38,8 @@ function App() {
                 {CarouselSection()}
               </div>
               <div className="section">{FirstSection()}</div>
-              {/* <div className="section">{SecondSection()}</div> */}
+              <div className="section">{SecondSection()}</div>
+              <div className="section">{ThridSection()}</div>
             </div>
           );
         }}

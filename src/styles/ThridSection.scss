@@ -1,4 +1,4 @@
-.leftSide {
+.ThridSectionleftSide {
   float: left;
   width: 50%;
   background: #fdffe8;
@@ -11,7 +11,7 @@
     display: block;
     height: 70%;
   }
-  .greenmouse {
+  .ThridSection-greenmouse {
     bottom: 1%;
     right: 48%;
     position: absolute;
@@ -19,17 +19,17 @@
   }
 }
 
-.rightSide {
+.ThridSectionrightSide {
   float: left;
   width: 50%;
   background: #ffffff;
   height: 100%;
 }
-.rightSide .titlesqure {
+.ThridSectionrightSide .titlesqure {
   float: right;
   margin-top: 196px;
-  width: 657px;
-  height: 120px;
+  width: 46vw;
+  height: 12vh;
   background: #eeffcb;
   display: flex;
   justify-content: center;
@@ -43,12 +43,13 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   }
 }
-.rightSide .explainsqure {
-  position: absolute;
-  width: 590px;
-  height: 461px;
-  left: 783px;
-  top: 372px;
+.ThridSectionrightSide .explainsqure {
+  position: relative;
+  width: 41vw;
+  height: 45.1vh;
+  top: 3.5%;
+  left: 8%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,9 +71,9 @@
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   }
 }
-.rightSide .chat {
+.ThridSectionrightSide .ThridSection-chat {
   bottom: 2%;
   right: 3%;
-  // position: fixed;
+  position: absolute;
   z-index: 3000;
 }

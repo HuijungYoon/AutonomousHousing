@@ -1,38 +1,83 @@
-// .leftSideSecondSection {
-//   float: left;
-//   width: 50%;
-//   background: #ffffff;
-//   height: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+.leftSideSecondSection {
+  float: left;
+  width: 50%;
+  background: #ffffff;
+  height: 100%;
+  display: flex;
 
-//   .greenmouse {
-//     bottom: 1%;
-//     right: 48.5%;
-//     position: fixed;
-//     z-index: 3000;
-//   }
-// }
-// // .leftSide img {
+  .greenmouseSecondSection {
+    bottom: 1%;
+    right: 48.5%;
+    position: absolute;
+    z-index: 3000;
+  }
+  .titlesqure {
+    margin-top: 19.6%;
+    width: 46vw;
+    height: 12vh;
+    background: #eeffcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-family: Noto Sans KR;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+      color: #48be00;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+  }
+  .explainsqure {
+    position: absolute;
+    width: 41vw;
+    height: 57.8vh;
+    left: 4%;
+    top: 27.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1bc12c;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    p {
+      /* 자율주택정비사업의 금융지원 융자대상 공사비 , 이주비 , 기존대출상환비 등 전체 사업비 융자기간 : 최장 준공후 10년 지원금리 : 연 1.5% 융자금액 : 총사업비의 70% 예시 )10억(토지비용) + 15억(건축및기타사업비용) = 17.5억 융자가능 */
 
-// // }
+      font-family: Noto Sans KR;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 41px;
+      display: flex;
+      align-items: center;
+      text-align: center;
 
-// .rightSideSecondSection {
-//   float: right;
-//   width: 50%;
-//   background: #fdffe8;
-//   height: 100%;
-//   .image1 {
-//     max-width: 100%;
-//     display: block;
-//     height: 70%;
-//   }
-// }
+      color: #ffffff;
 
-// .rightSide .chat {
-//   bottom: 2%;
-//   right: 3%;
-//   position: fixed;
-//   z-index: 3000;
-// }
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.rightSideSecondSection {
+  float: right;
+  width: 50%;
+  background: #fdffe8;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .secondMainImage {
+    max-width: 100%;
+    display: block;
+    height: 70%;
+  }
+}
+
+.rightSideSecondSection .chatSecondSection {
+  bottom: 2%;
+  right: 3%;
+  position: absolute;
+  z-index: 3000;
+}
