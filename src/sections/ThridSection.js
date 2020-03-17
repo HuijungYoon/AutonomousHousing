@@ -1,5 +1,17 @@
 import React from "react";
 import "../styles/ThridSection.scss";
+import styled, { keyframes } from "styled-components";
+import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
+import FadeInRightBig from "react-animations/lib/fadeInRightBig";
+import { Kakaochannel } from "../App";
+const FadeInLeftBigAnimation = keyframes`${FadeInLeftBig}`;
+const FadeInLeftBigDiv = styled.div`
+  animation: 2.5s ${FadeInLeftBigAnimation};
+`;
+const FadeInRightBigAnimation = keyframes`${FadeInRightBig}`;
+const FadeInRightBigDiv = styled.div`
+  animation: 2.5s ${FadeInRightBigAnimation};
+`;
 const ThridSection = () => {
   return (
     <>
@@ -9,6 +21,7 @@ const ThridSection = () => {
           className="image1"
           alt="image1"
         />
+
         <img
           src={require("../images/greenmouse.svg")}
           className="ThridSection-greenmouse"
@@ -20,6 +33,7 @@ const ThridSection = () => {
         <div className="titlesqure">
           <span>용적률 상향</span>
         </div>
+
         <div className="explainsqure">
           <img src={require("../images/ellipse.png")} alt="chat" />
           <p>
@@ -34,11 +48,20 @@ const ThridSection = () => {
             <br />이 가능합니다.
           </p>
         </div>
+
         <img
           src={require("../images/chat.svg")}
           className="ThridSection-chat"
           alt="ThridSectionchat"
+          onClick={Kakaochannel}
         />
+        <a className="ThridSection-chat-mobileversion-a" href="tel:16442258">
+          <img
+            src={require("../images/chat.svg")}
+            className="ThridSection-chat-mobileversion"
+            alt="ThridSectionchat"
+          />
+        </a>
       </div>
     </>
   );

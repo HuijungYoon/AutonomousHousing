@@ -85,6 +85,8 @@
   position: absolute;
   top: 30px;
   margin-left: -12%;
+  cursor: pointer;
+  z-index: 10000;
   /* left: 60px; */
   /* right: 10px; */
 }
@@ -132,8 +134,16 @@
 }
 
 .chat {
+  // cursor: pointer;
+  // position: absolute;
+  // margin-top: -2%;
+  // margin-left: 10%;
+  // z-index: 3000;
+  // top: 87%;
+  // margin-left: 10%;
+
   position: absolute;
-  //margin-bottom: 50%;
-  margin-top: -2.3%;
+  // position: absolute;
+  top: 85%;
   margin-left: 10%;
 }

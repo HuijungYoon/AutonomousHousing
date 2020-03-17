@@ -1,29 +1,47 @@
 import React from "react";
 import "../styles/FirstSection.scss";
+import styled, { keyframes } from "styled-components";
+import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
+import FadeInRightBig from "react-animations/lib/fadeInRightBig";
+import { Kakaochannel } from "../App";
+const FadeInLeftBigAnimation = keyframes`${FadeInLeftBig}`;
+const FadeInLeftBigDiv = styled.div`
+  animation: 2.5s ${FadeInLeftBigAnimation};
+`;
+const FadeInRightBigAnimation = keyframes`${FadeInRightBig}`;
+const FadeInRightBigDiv = styled.div`
+  animation: 2.5s ${FadeInRightBigAnimation};
+`;
 
 const FirstSection = () => {
-  console.log("불러와지나?");
   return (
     <>
-      <div className="leftSide">
+      <div className="FirstSectionleftSide">
         <img
           src={require("../images/firstsection_image1.png")}
           className="image1"
           alt="image1"
         />
+
         <img
           src={require("../images/greenmouse.svg")}
-          className="greenmouse"
-          alt="greenmouse"
+          className="FirstSection-greenmouse"
+          alt="FirstSectiongreenmouse"
         />
       </div>
 
-      <div className="rightSide">
+      <div className="FirstSectionrightSide">
         <div className="titlesqure">
-          <span>자율주택정비사업이란?</span>
+          <span>용적률 상향</span>
         </div>
+
         <div className="explainsqure">
-          <img src={require("../images/ellipse.png")} alt="chat" />
+          <img
+            src={require("../images/ellipse.png")}
+            className="ellipse"
+            alt="chat"
+          />
+
           <p>
             2018년부터 시행된 &#60;빈집 및 소규모주택정
             <br />
@@ -32,11 +50,24 @@ const FirstSection = () => {
             <br /> 정부의 사업비 지원과 용적률 특혜를 받아
             <br /> 새집을 짓는 사업입니다.
             <br />
-            <br />
-            인접한 2가구 이상만 합의해 신청하면 사업이 가능합니다.
+            <br /> 인접한 2가구 이상만 합의해 신청하면 사업
+            <br />이 가능합니다.
           </p>
         </div>
-        <img src={require("../images/chat.svg")} className="chat" alt="chat" />
+
+        <img
+          src={require("../images/chat.svg")}
+          className="FirstSection-chat"
+          alt="FirstSectionchat"
+          onClick={Kakaochannel}
+        />
+        <a className="FirstSection-chat-mobileversion-a" href="tel:16442258">
+          <img
+            src={require("../images/chat.svg")}
+            className="FirstSection-chat-mobileversion"
+            alt="FirstSectionchat"
+          />
+        </a>
       </div>
     </>
   );

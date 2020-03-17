@@ -1,0 +1,127 @@
+@import "utils";
+.FinalSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // max-width: 1440px;
+  // max-height: 1024px;
+  /* 한국자율주택이 함께합니다 */
+
+  span {
+    margin-top: 3%;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 58px;
+    /* identical to box height */
+
+    color: #48be00;
+
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.FinalSection .explainsqure {
+  //   position: absolute;
+  width: 91vw;
+  height: 33vh;
+
+  background: #1bc12c;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    /* or 120% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+.footersqure {
+  /* Rectangle 2 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+  height: 25vh;
+  background: #52b75c;
+  .footer-logo {
+    margin-bottom: 2%;
+  }
+  span {
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 2rem;
+  }
+  .finalSection-chat {
+    bottom: 2%;
+    right: 3%;
+    position: absolute;
+    z-index: 3000;
+    cursor: pointer;
+  }
+}
+
+.footersqure .FinalSection-chat-mobileversion-a {
+  bottom: 2%;
+  right: 3%;
+  position: absolute;
+  z-index: 3000;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+@include media("<huge") {
+  //font-size: 46px;
+}
+@include media("<large") {
+}
+
+@include media("<medium") {
+  .footersqure {
+    .FinalSection-chat {
+      bottom: 2%;
+      right: 3%;
+      position: absolute;
+      z-index: 3000;
+      cursor: pointer;
+      max-width: 100%;
+      display: block;
+      height: 8%;
+      display: none;
+    }
+    .FinalSection-chat-mobileversion-a {
+      visibility: visible;
+    }
+  }
+}
+@include media("<small") {
+  .FinalSectionrightSide .FinalSection-chat {
+    bottom: 2%;
+    right: 3%;
+    position: absolute;
+    z-index: 3000;
+    cursor: pointer;
+    max-width: 100%;
+    display: block;
+    height: 6%;
+  }
+}

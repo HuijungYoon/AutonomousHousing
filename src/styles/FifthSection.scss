@@ -1,6 +1,5 @@
 @import "utils";
-
-.ThridSectionleftSide {
+.FifthSectionleftSide {
   float: left;
   width: 50%;
   background: #fdffe8;
@@ -13,7 +12,7 @@
     display: block;
     height: 70%;
   }
-  .ThridSection-greenmouse {
+  .FifthSection-greenmouse {
     bottom: 1%;
     right: 48%;
     position: absolute;
@@ -21,15 +20,15 @@
   }
 }
 
-.ThridSectionrightSide {
+.FifthSectionrightSide {
   float: left;
   width: 50%;
   background: #ffffff;
   height: 100%;
 }
-.ThridSectionrightSide .titlesqure {
+.FifthSectionrightSide .titlesqure {
   float: right;
-  margin-top: 196px;
+  margin-top: 38.3%;
   width: 46vw;
   height: 12vh;
   background: #eeffcb;
@@ -45,10 +44,10 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   }
 }
-.ThridSectionrightSide .explainsqure {
+.FifthSectionrightSide .explainsqure {
   position: relative;
   width: 41vw;
-  height: 45.1vh;
+  height: 26.5vh;
   top: 3.5%;
   left: 8%;
 
@@ -73,7 +72,7 @@
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   }
 }
-.ThridSectionrightSide .ThridSection-chat {
+.FifthSectionrightSide .FifthSection-chat {
   bottom: 2%;
   right: 3%;
   position: absolute;
@@ -81,7 +80,7 @@
   cursor: pointer;
 }
 
-.ThridSectionrightSide .ThridSection-chat-mobileversion-a {
+.FifthSectionrightSide .FifthSection-chat-mobileversion-a {
   bottom: 2%;
   right: 3%;
   position: absolute;
@@ -97,7 +96,7 @@
 }
 
 @include media("<medium") {
-  .ThridSectionrightSide .ThridSection-chat {
+  .FifthSectionrightSide .FifthSection-chat {
     bottom: 2%;
     right: 3%;
     position: absolute;
@@ -108,12 +107,12 @@
     height: 8%;
     display: none;
   }
-  .ThridSectionrightSide .ThridSection-chat-mobileversion-a {
+  .FifthSectionrightSide .FifthSection-chat-mobileversion-a {
     visibility: visible;
   }
 }
 @include media("<small") {
-  .ThridSectionrightSide .ThridSection-chat {
+  .FifthSectionrightSide .FifthSection-chat {
     bottom: 2%;
     right: 3%;
     position: absolute;

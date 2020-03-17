@@ -6,6 +6,18 @@ import CarouselSection, { secionOneList } from "./sections/CarouselSection";
 import FirstSection from "./sections/FirstSection";
 import SecondSection from "./sections/SecondSection";
 import ThridSection from "./sections/ThridSection";
+import FourthSection from "./sections/FourthSection";
+import FifthSection from "./sections/FifthSection";
+import SixthSection from "./sections/SixthSection";
+import FinalSection from "./sections/FinalSection";
+import Test from "./sections/Test";
+
+export const Kakaochannel = () => {
+  window.Kakao.Channel.chat({
+    channelPublicId: "_nUzxhxb" // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
+  });
+};
+
 function App() {
   const onLeave = (origin, destination, direction) => {
     console.log("Leaving section " + origin.index);
@@ -13,6 +25,10 @@ function App() {
   const afterLoad = (origin, destination, direction) => {
     console.log("After load: " + destination.index);
   };
+  useEffect(() => {
+    window.Kakao.init("ff6cbca4d658b678425348f6f830831e");
+    console.log("호출되었어요");
+  }, []);
 
   return (
     <>
@@ -40,6 +56,10 @@ function App() {
               <div className="section">{FirstSection()}</div>
               <div className="section">{SecondSection()}</div>
               <div className="section">{ThridSection()}</div>
+              <div className="section">{FourthSection()}</div>
+              <div className="section">{FifthSection()}</div>
+              <div className="section">{SixthSection()}</div>
+              <div className="section">{FinalSection()}</div>
             </div>
           );
         }}

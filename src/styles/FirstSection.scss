@@ -1,4 +1,5 @@
-.leftSide {
+@import "utils";
+.FirstSectionleftSide {
   float: left;
   width: 50%;
   background: #fdffe8;
@@ -11,25 +12,49 @@
     display: block;
     height: 70%;
   }
-  .greenmouse {
+  .FirstSection-greenmouse {
     bottom: 1%;
     right: 48%;
     position: absolute;
     //z-index: 3000;
   }
+  @include media("<huge") {
+    //font-size: 46px;
+    .image1 {
+      max-width: 100%;
+      display: block;
+      height: 50%;
+    }
+  }
+  @include media("<large") {
+    .image1 {
+      max-width: 100%;
+      display: block;
+      height: 40%;
+    }
+  }
+
+  @include media("<medium") {
+    // font-size: 18px;
+    .image1 {
+      max-width: 100%;
+      display: block;
+      height: 30%;
+    }
+  }
 }
 
-.rightSide {
+.FirstSectionrightSide {
   float: left;
   width: 50%;
   background: #ffffff;
   height: 100%;
 }
-.rightSide .titlesqure {
+.FirstSectionrightSide .titlesqure {
   float: right;
   margin-top: 196px;
-  width: 657px;
-  height: 120px;
+  height: 12vh;
+  width: 46vw;
   background: #eeffcb;
   display: flex;
   justify-content: center;
@@ -42,13 +67,38 @@
     color: #48be00;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   }
+
+  @include media("<huge") {
+    width: 46vw;
+    height: 8vh;
+    //font-size: 46px;
+    span {
+      font-size: 40px;
+    }
+  }
+  @include media("<large") {
+    width: 46vw;
+    height: 5vh;
+    //font-size: 46px;
+    span {
+      font-size: 30px;
+    }
+  }
+
+  @include media("<medium") {
+    // font-size: 18px;
+    span {
+      font-size: 20px;
+    }
+  }
 }
-.rightSide .explainsqure {
-  position: absolute;
-  width: 590px;
-  height: 461px;
-  left: 783px;
-  top: 372px;
+.FirstSectionrightSide .explainsqure {
+  position: relative;
+  width: 41vw;
+  height: 45.1vh;
+  top: 3.5%;
+  left: 8%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,10 +119,140 @@
     color: #ffffff;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   }
+
+  @include media("<huge") {
+    position: relative;
+    width: 37vw;
+    height: 38.1vh;
+    top: 3.5%;
+    left: 8%;
+    //font-size: 46px;
+    .ellipse {
+      max-width: 70%;
+      //display: block;
+      // height: 0%;
+    }
+    p {
+      font-family: Noto Sans KR;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 41px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
+  @include media("<large") {
+    position: relative;
+    width: 37vw;
+    height: 39.1vh;
+    top: 3.5%;
+    left: 8%;
+    p {
+      font-size: 16px;
+      font-family: Noto Sans KR;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 35px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @include media("<medium") {
+    // font-size: 18px;
+    position: relative;
+    width: 45vw;
+    height: 34.1vh;
+    top: 3.5%;
+    left: 8%;
+    p {
+      font-family: Noto Sans KR;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
+  @include media("<small") {
+    position: relative;
+    width: 45vw;
+    height: 34.1vh;
+    top: 3.5%;
+    left: 8%;
+    p {
+      font-family: Noto Sans KR;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 4px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
 }
-.rightSide .chat {
+.FirstSectionrightSide .FirstSection-chat {
   bottom: 2%;
   right: 3%;
-  // position: fixed;
+  position: absolute;
   z-index: 3000;
+  cursor: pointer;
+}
+.FirstSectionrightSide .FirstSection-chat-mobileversion-a {
+  bottom: 2%;
+  right: 3%;
+  position: absolute;
+  z-index: 3000;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+@include media("<huge") {
+  //font-size: 46px;
+}
+@include media("<large") {
+}
+
+@include media("<medium") {
+  .FirstSectionrightSide .FirstSection-chat {
+    bottom: 2%;
+    right: 3%;
+    position: absolute;
+    z-index: 3000;
+    cursor: pointer;
+    max-width: 100%;
+    display: block;
+    height: 8%;
+    display: none;
+  }
+  .FirstSectionrightSide .FirstSection-chat-mobileversion-a {
+    visibility: visible;
+  }
+}
+@include media("<small") {
+  .FirstSectionrightSide .FirstSection-chat {
+    bottom: 2%;
+    right: 3%;
+    position: absolute;
+    z-index: 3000;
+    cursor: pointer;
+    max-width: 100%;
+    display: block;
+    height: 6%;
+  }
 }

@@ -1,12 +1,29 @@
 import React from "react";
 import "../styles/SecondSection.scss";
+import { Kakaochannel } from "../App";
+
 const SecondSection = () => {
   return (
     <>
-      <div className="leftSideSecondSection">
+      <div className="secondSectionrightSide">
+        <img
+          src={require("../images/secondsection_image1.png")}
+          className="image1"
+          alt="image1"
+        />
+
+        <img
+          src={require("../images/greenmouse.svg")}
+          className="secondSection-greenmouse"
+          alt="secondSectiongreenmouse"
+        />
+      </div>
+
+      <div className="secondSectionleftSide">
         <div className="titlesqure">
-          <span>사업비 정부사원</span>
+          <span>사업비 정부지원</span>
         </div>
+
         <div className="explainsqure">
           <img src={require("../images/ellipse.png")} alt="chat" />
           <p>
@@ -24,23 +41,18 @@ const SecondSection = () => {
           </p>
         </div>
         <img
-          src={require("../images/greenmouse.svg")}
-          className="greenmouseSecondSection"
-          alt="greenmouseSecondSection"
-        />
-      </div>
-
-      <div className="rightSideSecondSection">
-        <img
-          src={require("../images/secondsection_image1.png")}
-          className="secondMainImage"
-          alt="secondMainImage"
-        />
-        <img
           src={require("../images/chat.svg")}
-          className="chatSecondSection"
-          alt="chatSecondSection"
+          className="secondSection-chat"
+          alt="secondSectionchat"
+          onClick={Kakaochannel}
         />
+        <a className="secondSection-chat-mobileversion-a" href="tel:16442258">
+          <img
+            src={require("../images/chat.svg")}
+            className="secondSection-chat-mobileversion"
+            alt="secondSectionchat"
+          />
+        </a>
       </div>
     </>
   );
