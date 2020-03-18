@@ -39,6 +39,7 @@ const sectionOneData = [
 export const secionOneList = sectionOneData.map(x => {
   return (
     <>
+      <img src={require("../images/chat.svg")} className="chat" alt="chat" />
       <div className={cn("slide", x.className)}>
         <img src={require("../images/logo.png")} className="logo" alt="logo" />
         <Row>
@@ -56,7 +57,6 @@ export const secionOneList = sectionOneData.map(x => {
             />
           </Col>
         </Row>
-        <img src={require("../images/chat.svg")} className="chat" alt="chat" />
       </div>
     </>
   );
