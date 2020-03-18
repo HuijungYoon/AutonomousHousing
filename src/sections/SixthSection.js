@@ -21,13 +21,13 @@ const SixthSection = ({ index }) => {
       </div>
 
       <div className="SixthSectionleftSide">
-        <div className="titlesqure">
-          <Fade left big when={index}>
+        <Fade left big when={index}>
+          <div className="titlesqure">
             <span>사업기간 1년</span>
-          </Fade>
-        </div>
-        <div className="explainsqure">
-          <Fade left big when={index}>
+          </div>
+        </Fade>
+        <Fade left big when={index}>
+          <div className="explainsqure">
             <img src={require("../images/ellipse.png")} alt="chat" />
             <p>
               재개발, 재건축 사업의 경우
@@ -38,8 +38,8 @@ const SixthSection = ({ index }) => {
               <br /> 모든사업이평균 1년 내에 완료됩니다.
               <br />
             </p>
-          </Fade>
-        </div>
+          </div>
+        </Fade>
         <img
           src={require("../images/chat.svg")}
           className="SixthSection-chat"

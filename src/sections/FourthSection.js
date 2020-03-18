@@ -21,13 +21,13 @@ const FourthSection = ({ index }) => {
       </div>
 
       <div className="FourthSectionleftSide">
-        <div className="titlesqure">
-          <Fade left big when={index}>
+        <Fade left big when={index}>
+          <div className="titlesqure">
             <span>신축 후 전량 LH매입</span>
-          </Fade>
-        </div>
-        <div className="explainsqure">
-          <Fade left big when={index}>
+          </div>
+        </Fade>
+        <Fade left big when={index}>
+          <div className="explainsqure">
             <img src={require("../images/ellipse.png")} alt="chat" />
             <p>
               LH공사에서 신축물량을 주변시세대로 전량
@@ -41,8 +41,8 @@ const FourthSection = ({ index }) => {
               <br />
               다.
             </p>
-          </Fade>
-        </div>
+          </div>
+        </Fade>
         <img
           src={require("../images/chat.svg")}
           className="FourthSection-chat"

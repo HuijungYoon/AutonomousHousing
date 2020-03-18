@@ -21,13 +21,13 @@ const FifthSection = ({ index }) => {
       </div>
 
       <div className="FifthSectionrightSide">
-        <div className="titlesqure">
-          <Fade right big when={index}>
+        <Fade right big when={index}>
+          <div className="titlesqure">
             <span>주차장설치기준완화</span>
-          </Fade>
-        </div>
-        <div className="explainsqure">
-          <Fade right big when={index}>
+          </div>
+        </Fade>
+        <Fade right big when={index}>
+          <div className="explainsqure">
             <img src={require("../images/ellipse.png")} alt="chat" />
             <p>
               인근의 주차장에 주차장 사용권을 확보하는
@@ -35,8 +35,8 @@ const FifthSection = ({ index }) => {
               <br /> 주차장 설치 기준을 완화해줍니다.
               <br />
             </p>
-          </Fade>
-        </div>
+          </div>
+        </Fade>
         <img
           src={require("../images/chat.svg")}
           className="FifthSection-chat"

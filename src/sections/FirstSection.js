@@ -36,14 +36,14 @@ const FirstSection = ({ index }) => {
       </div>
 
       <div className="FirstSectionrightSide">
-        <div className="titlesqure">
-          <Fade right big when={index}>
+        <Fade right big when={index}>
+          <div className="titlesqure">
             <span>용적률 상향</span>
-          </Fade>
-        </div>
+          </div>
+        </Fade>
 
-        <div className="explainsqure">
-          <Fade right big when={index}>
+        <Fade right big when={index}>
+          <div className="explainsqure">
             <img
               src={require("../images/ellipse.png")}
               className="ellipse"
@@ -60,8 +60,8 @@ const FirstSection = ({ index }) => {
               <br /> 인접한 2가구 이상만 합의해 신청하면 사업
               <br />이 가능합니다.
             </p>
-          </Fade>
-        </div>
+          </div>
+        </Fade>
 
         <img
           src={require("../images/chat.svg")}

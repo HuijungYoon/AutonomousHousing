@@ -22,14 +22,14 @@ const SecondSection = ({ index }) => {
       </div>
 
       <div className="secondSectionleftSide">
-        <div className="titlesqure">
-          <Fade left big when={index}>
+        <Fade left big when={index}>
+          <div className="titlesqure">
             <span>사업비 정부지원</span>
-          </Fade>
-        </div>
+          </div>
+        </Fade>
 
-        <div className="explainsqure">
-          <Fade left big when={index}>
+        <Fade left big when={index}>
+          <div className="explainsqure">
             <img src={require("../images/ellipse.png")} alt="chat" />
             <p>
               자율주택정비사업의 금융지원
@@ -44,8 +44,8 @@ const SecondSection = ({ index }) => {
               <br />
               업비용) = 17.5억 융자가능
             </p>
-          </Fade>
-        </div>
+          </div>
+        </Fade>
         <img
           src={require("../images/chat.svg")}
           className="secondSection-chat"

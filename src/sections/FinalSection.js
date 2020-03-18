@@ -5,8 +5,8 @@ import Bounce from "react-reveal/Bounce";
 const FinalSection = ({ index }) => {
   return (
     <>
-      <div className="FinalSection">
-        <Bounce top cascade when={index}>
+      <Bounce top cascade when={index}>
+        <div className="FinalSection">
           <span>한국자율주택이 함께합니다</span>
 
           <img
@@ -29,10 +29,10 @@ const FinalSection = ({ index }) => {
               <br />
             </p>
           </div>
-        </Bounce>
-      </div>
-      <div className="footersqure">
-        <Bounce top cascade when={index}>
+        </div>
+      </Bounce>
+      <Bounce top cascade when={index}>
+        <div className="footersqure">
           <img
             src={require("../images/footerlogo.png")}
             className="footer-logo"
@@ -59,8 +59,8 @@ const FinalSection = ({ index }) => {
               alt="FinalSectionchat"
             />
           </a>
-        </Bounce>
-      </div>
+        </div>
+      </Bounce>
     </>
   );
 };
