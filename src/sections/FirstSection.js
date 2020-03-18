@@ -3,26 +3,31 @@ import "../styles/FirstSection.scss";
 import styled, { keyframes } from "styled-components";
 import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
 import FadeInRightBig from "react-animations/lib/fadeInRightBig";
-import { Kakaochannel } from "../App";
+import { Kakaochannel, afterLoad } from "../App";
+import Fade from "react-reveal/Fade";
 const FadeInLeftBigAnimation = keyframes`${FadeInLeftBig}`;
-const FadeInLeftBigDiv = styled.div`
+export const FadeInLeftBigDiv = styled.div`
   animation: 2.5s ${FadeInLeftBigAnimation};
 `;
 const FadeInRightBigAnimation = keyframes`${FadeInRightBig}`;
-const FadeInRightBigDiv = styled.div`
+export const FadeInRightBigDiv = styled.div`
   animation: 2.5s ${FadeInRightBigAnimation};
 `;
 
-const FirstSection = () => {
+const FirstSection = ({ index }) => {
+  console.log("page1");
+  console.log(index);
+
   return (
     <>
       <div className="FirstSectionleftSide">
-        <img
-          src={require("../images/firstsection_image1.png")}
-          className="image1"
-          alt="image1"
-        />
-
+        <Fade left big when={index}>
+          <img
+            src={require("../images/firstsection_image1.png")}
+            className="image1"
+            alt="image1"
+          />
+        </Fade>
         <img
           src={require("../images/greenmouse.svg")}
           className="FirstSection-greenmouse"
@@ -32,27 +37,30 @@ const FirstSection = () => {
 
       <div className="FirstSectionrightSide">
         <div className="titlesqure">
-          <span>용적률 상향</span>
+          <Fade right big when={index}>
+            <span>용적률 상향</span>
+          </Fade>
         </div>
 
         <div className="explainsqure">
-          <img
-            src={require("../images/ellipse.png")}
-            className="ellipse"
-            alt="chat"
-          />
-
-          <p>
-            2018년부터 시행된 &#60;빈집 및 소규모주택정
-            <br />
-            비에 관한 특례법&#62;에 따라 노후 단독주택 또<br />는 다세대
-            밀집지역의 주민들이 서로 합의해
-            <br /> 정부의 사업비 지원과 용적률 특혜를 받아
-            <br /> 새집을 짓는 사업입니다.
-            <br />
-            <br /> 인접한 2가구 이상만 합의해 신청하면 사업
-            <br />이 가능합니다.
-          </p>
+          <Fade right big when={index}>
+            <img
+              src={require("../images/ellipse.png")}
+              className="ellipse"
+              alt="chat"
+            />
+            <p>
+              2018년부터 시행된 &#60;빈집 및 소규모주택정
+              <br />
+              비에 관한 특례법&#62;에 따라 노후 단독주택 또<br />는 다세대
+              밀집지역의 주민들이 서로 합의해
+              <br /> 정부의 사업비 지원과 용적률 특혜를 받아
+              <br /> 새집을 짓는 사업입니다.
+              <br />
+              <br /> 인접한 2가구 이상만 합의해 신청하면 사업
+              <br />이 가능합니다.
+            </p>
+          </Fade>
         </div>
 
         <img

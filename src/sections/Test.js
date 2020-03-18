@@ -1,18 +1,31 @@
 import React from "react";
-import { bounce } from "react-animations";
-import Radium, { StyleRoot } from "radium";
+import { Row, Col } from "antd";
+import { Kakaochannel } from "../App";
+import "../styles/Test.scss";
 const Test = () => {
-  const styles = {
-    bounce: {
-      animation: "x 10s",
-      animationName: Radium.keyframes(bounce, "bounce")
-    }
-  };
   return (
     <>
-      <div className="test" style={styles.bounce}>
-        ??
-      </div>
+      <Row>
+        <Col span={12}>
+          <h3>span</h3>
+        </Col>
+
+        <Col span={12}>
+          <h3>hello</h3>
+        </Col>
+
+        <Col span={12}>
+          <h3>hello</h3>
+        </Col>
+
+        <Col span={12}>
+          <h3>hello</h3>
+        </Col>
+
+        <Col span={12}>
+          <h3>hello</h3>
+        </Col>
+      </Row>
     </>
   );
 };

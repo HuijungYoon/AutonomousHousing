@@ -90,37 +90,164 @@
   visibility: hidden;
 }
 
+//반응형
+
 @include media("<huge") {
   //font-size: 46px;
+  .secondSectionrightSide {
+    .image1 {
+      max-width: 100%;
+      display: block;
+      height: 50%;
+    }
+    .secondSection-greenmouse {
+      max-width: 100%;
+      height: 7%;
+    }
+  }
+  .secondSectionleftSide {
+    .titlesqure {
+      width: 46vw;
+      height: 8vh;
+      span {
+        font-size: 40px;
+      }
+    }
+    .explainsqure {
+      position: relative;
+      width: 37vw;
+      height: 38.1vh;
+      top: 3.5%;
+      left: 8%;
+      //font-size: 46px;
+      .ellipse {
+        max-width: 70%;
+        //display: block;
+        // height: 0%;
+      }
+      p {
+        font-size: 17px;
+        line-height: 41px;
+      }
+    }
+  }
 }
 @include media("<large") {
+  .secondSectionrightSide {
+    .image1 {
+      max-width: 100%;
+      display: block;
+      height: 40%;
+    }
+    .secondSection-greenmouse {
+      max-width: 100%;
+      height: 6%;
+    }
+  }
+  .secondSectionleftSide {
+    .titlesqure {
+      width: 46vw;
+      height: 5vh;
+      span {
+        font-size: 30px;
+      }
+    }
+    .explainsqure {
+      position: relative;
+      width: 37vw;
+      height: 39.1vh;
+      top: 3.5%;
+      left: 8%;
+      p {
+        font-size: 15px;
+        line-height: 35px;
+      }
+    }
+  }
 }
 
 @include media("<medium") {
-  .secondSectionleftSide .secondSection-chat {
-    bottom: 2%;
-    right: 3%;
-    position: absolute;
-    z-index: 3000;
-    cursor: pointer;
-    max-width: 100%;
-    display: block;
-    height: 8%;
-    display: none;
+  .secondSectionrightSide {
+    .image1 {
+      max-width: 100%;
+      display: block;
+      height: 30%;
+    }
+    .secondSection-greenmouse {
+      max-width: 100%;
+      height: 5%;
+    }
   }
-  .secondSectionleftSide .secondSection-chat-mobileversion-a {
-    visibility: visible;
+
+  .secondSectionrleftSide {
+    .titlesqure {
+      position: relative;
+      top: 7%;
+      span {
+        font-size: 20px;
+      }
+    }
+    .explainsqure {
+      position: relative;
+      width: 45vw;
+      height: 34.1vh;
+      top: 10.5%;
+      left: 8%;
+      p {
+        font-size: 12px;
+        line-height: 25px;
+      }
+    }
+    .secondSection-chat {
+      display: none;
+    }
+    .secondSection-chat-mobileversion-a {
+      visibility: visible;
+      height: 11%;
+      position: absolute;
+      z-index: 100;
+      cursor: pointer;
+      bottom: -2%;
+      right: 3%;
+      .secondSection-chat-mobileversion {
+        max-width: 100%;
+        height: 70%;
+      }
+    }
   }
 }
 @include media("<small") {
-  .secondSectionleftSide .secondSection-chat {
-    bottom: 2%;
-    right: 3%;
-    position: absolute;
-    z-index: 3000;
-    cursor: pointer;
-    max-width: 100%;
-    display: block;
-    height: 6%;
+  .secondSectionleftSide {
+    .secondSection-chat {
+      display: none;
+    }
+    .titlesqure {
+      position: relative;
+      top: 10%;
+    }
+    .explainsqure {
+      position: relative;
+      width: 48vw;
+      height: 34.1vh;
+      top: 13.5%;
+      left: 1%;
+      p {
+        font-size: 4px;
+        line-height: 20px;
+      }
+    }
+    .secondSection-chat-mobileversion-a {
+      visibility: visible;
+      height: 11%;
+      position: absolute;
+      z-index: 100;
+      cursor: pointer;
+      bottom: -2%;
+      right: 3%;
+      .secondSection-chat-mobileversion {
+        max-width: 100%;
+        height: 70%;
+      }
+    }
   }
 }

@@ -1,9 +1,11 @@
 .fp-section {
   text-align: center;
 }
+
 .fp-tableCell {
   display: table-cell;
   vertical-align: bottom;
+
   width: 100%;
   height: 100%;
 }

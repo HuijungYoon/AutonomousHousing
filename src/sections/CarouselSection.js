@@ -2,9 +2,8 @@ import React from "react";
 import "../styles/Carousel.scss";
 // import "../style.css";
 import cn from "classnames";
-// import Scroll from "../images/mousescroll.svg";
 import { Row, Col } from "antd";
-import { Kakaochannel } from "../App";
+
 const sectionOneData = [
   {
     id: 1,
@@ -36,20 +35,37 @@ const sectionOneData = [
     subTitle: "오래된 주택을 보유하고 계신다면"
   }
 ];
+const Kakaochannel = () => {
+  window.Kakao.Channel.chat({
+    channelPublicId: "_nUzxhxb" // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
+  });
+};
 export const secionOneList = sectionOneData.map(x => {
   return (
     <>
-      <img src={require("../images/chat.svg")} className="chat" alt="chat" />
+      <img
+        src={require("../images/chat.svg")}
+        onClick={Kakaochannel}
+        className="chat"
+        alt="chat"
+      />
+      <a className="CarouselSection-chat-mobileversion-a" href="tel:16442258">
+        <img
+          src={require("../images/chat.svg")}
+          className="CarouselSection-chat-mobileversion"
+          alt="Carouselchat"
+        />
+      </a>
       <div className={cn("slide", x.className)}>
         <img src={require("../images/logo.png")} className="logo" alt="logo" />
         <Row>
-          <Col>
+          <Col span={24}>
             <span className={cn("slid", "title")}>{x.title}</span>
           </Col>
-          <Col>
+          <Col span={24}>
             <span className={cn("slid", "subtitle")}>{x.subTitle}</span>
           </Col>
-          <Col>
+          <Col span={24}>
             <img
               src={require("../images/mousescroll.svg")}
               className="mouseScrollDown"

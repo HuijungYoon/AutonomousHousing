@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 import "./style.css";
@@ -19,25 +19,27 @@ export const Kakaochannel = () => {
 };
 
 function App() {
+  const [index, setIndex] = useState(null);
   const onLeave = (origin, destination, direction) => {
     console.log("Leaving section " + origin.index);
   };
   const afterLoad = (origin, destination, direction) => {
-    console.log("After load: " + destination.index);
+    console.log("After load: " + setIndex(destination.index));
   };
+
   useEffect(() => {
     window.Kakao.init("ff6cbca4d658b678425348f6f830831e");
     console.log("호출되었어요");
   }, []);
-
   return (
     <>
       <ReactFullpage
         scrollOverflow={true}
         // navigation={true}
-        slidesNavigation={true}
+        // slidesNavigation={true}
         slidesNavPosition="bottom"
         // sectionsColor={["orange", "purple", "green"]}
+
         onLeave={onLeave}
         controlArrows={false}
         afterLoad={afterLoad}
@@ -53,13 +55,13 @@ function App() {
               <div className="section" onLoad={moveRightAutoPlay}>
                 {CarouselSection()}
               </div>
-              <div className="section">{FirstSection()}</div>
-              <div className="section">{SecondSection()}</div>
-              <div className="section">{ThridSection()}</div>
-              <div className="section">{FourthSection()}</div>
-              <div className="section">{FifthSection()}</div>
-              <div className="section">{SixthSection()}</div>
-              <div className="section">{FinalSection()}</div>
+              <div className="section">{FirstSection({ index })}</div>
+              <div className="section">{SecondSection({ index })}</div>
+              <div className="section">{ThridSection({ index })}</div>
+              <div className="section">{FourthSection({ index })}</div>
+              <div className="section">{FifthSection({ index })}</div>
+              <div className="section">{SixthSection({ index })}</div>
+              <div className="section">{FinalSection({ index })}</div>
             </div>
           );
         }}
