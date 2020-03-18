@@ -219,13 +219,16 @@
   }
 }
 @include media("<small") {
-  .FirstSectionrightSide {
+  .FifthSectionrightSide {
     .FirstSection-chat {
       display: none;
     }
     .titlesqure {
       position: relative;
       top: 10%;
+      span {
+        font-size: 18px;
+      }
     }
     .explainsqure {
       position: relative;
