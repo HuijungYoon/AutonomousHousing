@@ -110,13 +110,21 @@
   }
 }
 
-.fp-section.fp-table,
+.firstSlide .fp-section.fp-table,
 .fp-slide.fp-table {
   display: flex;
-  table-layout: fixed;
+  // flex-direction: column;
+  // table-layout: fixed;
   width: 100%;
 }
-.fp-tableCell {
+.firstSlide .fp-tableCell {
+  display: flex;
+  flex-direction: column;
+  // display: table-cell;
+  vertical-align: bottom;
+
+  // width: 100%;
+  // height: 100%;
 }
 
 .mouseScrollDown {
