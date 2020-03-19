@@ -112,7 +112,11 @@
 
 .mouseScrollDown {
   margin-top: 1em;
-  margin-left: 59.3rem;
+}
+.mouseScrollDownR {
+  position: absolute;
+  bottom: 1%;
+  z-index: 300;
 }
 
 .chat {
@@ -155,10 +159,22 @@
       height: 60%;
     }
   }
+  .mouseScrollDownR {
+    max-width: 100%;
+    height: 8%;
+  }
+  .logo {
+    max-width: 100%;
+    height: 8%;
+  }
 }
 @include media("<small") {
   .chat {
     display: none;
+  }
+  .mouseScrollDownR {
+    max-width: 100%;
+    height: 6%;
   }
 }
 

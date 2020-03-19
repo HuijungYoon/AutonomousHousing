@@ -59,6 +59,11 @@ export const secionOneList = sectionOneData.map(x => {
 
       <div className={cn("slide", x.className)}>
         <img src={require("../images/logo.png")} className="logo" alt="logo" />
+        <img
+          src={require("../images/mousescroll.svg")}
+          className="mouseScrollDownR"
+          alt="mouse"
+        />
         <Row>
           <Col span={24}>
             <span className={cn("slid", "title")}>{x.title}</span>
@@ -66,13 +71,15 @@ export const secionOneList = sectionOneData.map(x => {
           <Col span={24}>
             <span className={cn("slid", "subtitle")}>{x.subTitle}</span>
           </Col>
-          <Col>
+          <Col span={24}>
             <img
+              style={{ visibility: "hidden" }}
               src={require("../images/mousescroll.svg")}
               className="mouseScrollDown"
               alt="mouse"
             />
           </Col>
+          <Col span={24}></Col>
         </Row>
       </div>
     </>
