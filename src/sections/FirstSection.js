@@ -40,9 +40,7 @@ const FirstSection = ({ index }) => {
           <div className="titlesqure">
             <span>용적률 상향</span>
           </div>
-        </Fade>
 
-        <Fade right big when={index}>
           <div className="explainsqure">
             <img
               src={require("../images/ellipse.png")}

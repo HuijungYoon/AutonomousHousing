@@ -39,7 +39,7 @@ function App() {
         // slidesNavigation={true}
         slidesNavPosition="bottom"
         // sectionsColor={["orange", "purple", "green"]}
-
+        scrollBar={false}
         onLeave={onLeave}
         controlArrows={false}
         afterLoad={afterLoad}

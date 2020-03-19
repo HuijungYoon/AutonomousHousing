@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   /* background-size: cover; */
   background-size: 100% 100%;
-  width: 1440px;
   @include media("<huge") {
     width: 1024px;
   }
@@ -13,10 +12,6 @@
   }
   @include media("<medium") {
     width: 90%;
-    .mouseScrollDown {
-      max-width: 100%;
-      height: 50%;
-    }
   }
 }
 
@@ -33,10 +28,6 @@
   }
   @include media("<medium") {
     width: 90%;
-    .mouseScrollDown {
-      max-width: 100%;
-      height: 50%;
-    }
   }
 }
 .thridSlide {
@@ -52,10 +43,6 @@
   }
   @include media("<medium") {
     width: 90%;
-    .mouseScrollDown {
-      max-width: 100%;
-      height: 50%;
-    }
   }
 }
 .fourthSlide {
@@ -71,27 +58,17 @@
   }
   @include media("<medium") {
     width: 90%;
-    .mouseScrollDown {
-      max-width: 100%;
-      height: 50%;
-    }
   }
 }
 
 .logo {
   position: absolute;
-  top: 30px;
+  top: 3%;
   margin-left: -12%;
   cursor: pointer;
-  z-index: -1;
+  z-index: 100;
   /* left: 60px; */
   /* right: 10px; */
-}
-.fp-tableCell {
-  display: table-cell;
-  vertical-align: bottom;
-  width: 100%;
-  height: 100%;
 }
 
 .title {
@@ -134,7 +111,12 @@
 }
 
 .mouseScrollDown {
-  margin-top: 1em;
+  //margin-top: 1em;
+  position: absolute;
+  bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
 }
 
 .chat {

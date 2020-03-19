@@ -56,6 +56,11 @@ export const secionOneList = sectionOneData.map(x => {
           alt="Carouselchat"
         />
       </a>
+      <img
+        src={require("../images/mousescroll.svg")}
+        className="mouseScrollDown"
+        alt="mouse"
+      />
       <div className={cn("slide", x.className)}>
         <img src={require("../images/logo.png")} className="logo" alt="logo" />
         <Row>
@@ -64,13 +69,6 @@ export const secionOneList = sectionOneData.map(x => {
           </Col>
           <Col span={24}>
             <span className={cn("slid", "subtitle")}>{x.subTitle}</span>
-          </Col>
-          <Col span={24}>
-            <img
-              src={require("../images/mousescroll.svg")}
-              className="mouseScrollDown"
-              alt="mouse"
-            />
           </Col>
         </Row>
       </div>
