@@ -64,7 +64,7 @@
 .logo {
   position: absolute;
   top: 3%;
-  margin-left: -46%;
+  margin-left: -11%;
   cursor: pointer;
   z-index: 100;
   /* left: 60px; */
@@ -110,30 +110,9 @@
   }
 }
 
-.firstSlide .fp-section.fp-table,
-.fp-slide.fp-table {
-  display: flex;
-  // flex-direction: column;
-  // table-layout: fixed;
-  width: 100%;
-}
-.firstSlide .fp-tableCell {
-  display: flex;
-  flex-direction: column;
-  // display: table-cell;
-  vertical-align: bottom;
-
-  // width: 100%;
-  // height: 100%;
-}
-
 .mouseScrollDown {
-  //margin-top: 1em;
-  position: absolute;
-  bottom: 3%;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 100;
+  margin-top: 1em;
+  margin-left: 59.3rem;
 }
 
 .chat {
@@ -181,4 +160,32 @@
   .chat {
     display: none;
   }
+}
+
+.firstSlide .fp-tableCell {
+  display: table-cell;
+  vertical-align: bottom;
+  width: 100%;
+  height: 100%;
+}
+
+.secondSlide .fp-tableCell {
+  display: table-cell;
+  vertical-align: bottom;
+  width: 100%;
+  height: 100%;
+}
+
+.thridSlide .fp-tableCell {
+  display: table-cell;
+  vertical-align: bottom;
+  width: 100%;
+  height: 100%;
+}
+
+.fourthSlide .fp-tableCell {
+  display: table-cell;
+  vertical-align: bottom;
+  width: 100%;
+  height: 100%;
 }
