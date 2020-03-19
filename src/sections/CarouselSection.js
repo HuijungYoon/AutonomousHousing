@@ -3,7 +3,7 @@ import "../styles/Carousel.scss";
 // import "../style.css";
 import cn from "classnames";
 import { Row, Col } from "antd";
-
+import Bounce from "react-reveal/Bounce";
 const sectionOneData = [
   {
     id: 1,
@@ -59,11 +59,13 @@ export const secionOneList = sectionOneData.map(x => {
 
       <div className={cn("slide", x.className)}>
         <img src={require("../images/logo.png")} className="logo" alt="logo" />
-        <img
-          src={require("../images/mousescroll.svg")}
-          className="mouseScrollDownR"
-          alt="mouse"
-        />
+        <Bounce duration={3500} forever={true}>
+          <img
+            src={require("../images/mousescroll.svg")}
+            className="mouseScrollDownR"
+            alt="mouse"
+          />
+        </Bounce>
         <Row>
           <Col span={24}>
             <span className={cn("slid", "title")}>{x.title}</span>
