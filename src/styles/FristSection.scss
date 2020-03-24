@@ -8,10 +8,10 @@
   justify-content: center;
   align-items: center;
   .image1 {
-    max-width: 100%;
+    // max-width: 100%;
     display: block;
     //   height: 100%;
-    // width: 90%;
+    max-width: 100%;
     height: auto;
   }
 
@@ -49,8 +49,12 @@
 }
 .FirstSectionrightSide .explainsqure {
   position: relative;
+  //   width: 41vw;
+  //   height: 45.1vh;
+
   width: 41vw;
-  height: 45.1vh;
+  height: 57.5vh;
+
   top: 3.5%;
   left: 8%;
 
@@ -66,7 +70,8 @@
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
+    //font-size: 28px;
+    font-size: 2em;
     line-height: 41px;
     display: flex;
     align-items: center;
@@ -119,8 +124,8 @@
     }
     .explainsqure {
       position: relative;
-      width: 37vw;
-      height: 38.1vh;
+      //   width: 37vw;
+      //   height: 38.1vh;
       top: 3.5%;
       left: 8%;
       //font-size: 46px;
@@ -130,8 +135,8 @@
         // height: 0%;
       }
       p {
-        font-size: 17px;
-        line-height: 41px;
+        // font-size: 17px;
+        // line-height: 41px;
       }
     }
   }
@@ -146,6 +151,13 @@
     .FirstSection-greenmouse {
       max-width: 100%;
       height: 6%;
+      .image1 {
+        // max-width: 100%;
+        display: block;
+        //   height: 100%;
+        width: 100%;
+        height: auto;
+      }
     }
   }
   .FirstSectionrightSide {
@@ -158,13 +170,13 @@
     }
     .explainsqure {
       position: relative;
-      width: 37vw;
-      height: 39.1vh;
+      //   width: 37vw;
+      //   height: 39.1vh;
       top: 3.5%;
       left: 8%;
       p {
-        font-size: 15px;
-        line-height: 35px;
+        // font-size: 15px;
+        // line-height: 35px;
       }
     }
   }
@@ -173,9 +185,9 @@
 @include media("<medium") {
   .FirstSectionleftSide {
     .image1 {
-      max-width: 100%;
+      width: 100%;
       display: block;
-      height: 30%;
+      height: auto;
     }
     .FirstSection-greenmouse {
       max-width: 100%;
@@ -193,13 +205,13 @@
     }
     .explainsqure {
       position: relative;
-      width: 45vw;
-      height: 34.1vh;
+      //   width: 45vw;
+      //   height: 34.1vh;
       top: 10.5%;
       left: 8%;
       p {
-        font-size: 12px;
-        line-height: 25px;
+        // font-size: 12px;
+        //line-height: 25px;
       }
     }
     .FirstSection-chat {
@@ -236,8 +248,8 @@
       top: 13.5%;
       left: 1%;
       p {
-        font-size: 4px;
-        line-height: 20px;
+        // font-size: 4px;
+        // line-height: 0px;
       }
     }
     .FirstSection-chat-mobileversion-a {
