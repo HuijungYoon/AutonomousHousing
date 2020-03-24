@@ -43,6 +43,7 @@ function App() {
         onLeave={onLeave}
         controlArrows={false}
         afterLoad={afterLoad}
+        responsiveHeight={1024}
         render={({ state, fullpageApi }) => {
           const moveRightAutoPlay = () => {
             setInterval(() => {
