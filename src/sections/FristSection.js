@@ -1,10 +1,11 @@
 import React from "react";
-import "../styles/FristSection.scss";
+import "../styles/FirstSection.scss";
 import styled, { keyframes } from "styled-components";
 import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
 import FadeInRightBig from "react-animations/lib/fadeInRightBig";
 import { Kakaochannel, afterLoad } from "../App";
 import Fade from "react-reveal/Fade";
+import Responsive from "../components/common/Responsive";
 const FadeInLeftBigAnimation = keyframes`${FadeInLeftBig}`;
 export const FadeInLeftBigDiv = styled.div`
   animation: 2.5s ${FadeInLeftBigAnimation};
@@ -14,7 +15,7 @@ export const FadeInRightBigDiv = styled.div`
   animation: 2.5s ${FadeInRightBigAnimation};
 `;
 
-const FirstSection = ({ index }) => {
+const FristSection = ({ index }) => {
   console.log("page1");
   console.log(index);
 
@@ -79,4 +80,4 @@ const FirstSection = ({ index }) => {
   );
 };
 
-export default FirstSection;
+export default FristSection;
