@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/FifthSection.scss";
 import { Kakaochannel } from "../App";
 import Fade from "react-reveal/Fade";
+import Jump from "react-reveal/Jump";
 const FifthSection = ({ index }) => {
   return (
     <>
@@ -13,11 +14,13 @@ const FifthSection = ({ index }) => {
             alt="image1"
           />
         </Fade>
-        <img
-          src={require("../images/greenmouse.svg")}
-          className="FifthSection-greenmouse"
-          alt="FifthSectiongreenmouse"
-        />
+        <Jump top duration={3500} forever={true}>
+          <img
+            src={require("../images/greenmouse.svg")}
+            className="FifthSection-greenmouse"
+            alt="FifthSectiongreenmouse"
+          />
+        </Jump>
       </div>
 
       <div className="FifthSectionrightSide">

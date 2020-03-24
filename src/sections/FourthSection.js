@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/FourthSection.scss";
 import { Kakaochannel } from "../App";
 import Fade from "react-reveal/Fade";
+import Jump from "react-reveal/Jump";
 const FourthSection = ({ index }) => {
   return (
     <>
@@ -13,11 +14,13 @@ const FourthSection = ({ index }) => {
             alt="image1"
           />
         </Fade>
-        <img
-          src={require("../images/greenmouse.svg")}
-          className="FourthSection-greenmouse"
-          alt="FourthSectiongreenmouse"
-        />
+        <Jump top duration={3500} forever={true}>
+          <img
+            src={require("../images/greenmouse.svg")}
+            className="FourthSection-greenmouse"
+            alt="FourthSectiongreenmouse"
+          />
+        </Jump>
       </div>
 
       <div className="FourthSectionleftSide">
@@ -43,12 +46,14 @@ const FourthSection = ({ index }) => {
             </p>
           </div>
         </Fade>
+
         <img
           src={require("../images/chat.svg")}
           className="FourthSection-chat"
           alt="FourthSectionchat"
           onClick={Kakaochannel}
         />
+
         <a className="FourthSection-chat-mobileversion-a" href="tel:16442258">
           <img
             src={require("../images/chat.svg")}

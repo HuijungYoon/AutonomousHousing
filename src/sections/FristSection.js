@@ -1,11 +1,11 @@
 import React from "react";
-import "../styles/FirstSection.scss";
+import "../styles/FristSection.scss";
 import styled, { keyframes } from "styled-components";
 import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
 import FadeInRightBig from "react-animations/lib/fadeInRightBig";
 import { Kakaochannel, afterLoad } from "../App";
 import Fade from "react-reveal/Fade";
-import Responsive from "../components/common/Responsive";
+import Jump from "react-reveal/Jump";
 const FadeInLeftBigAnimation = keyframes`${FadeInLeftBig}`;
 export const FadeInLeftBigDiv = styled.div`
   animation: 2.5s ${FadeInLeftBigAnimation};
@@ -29,11 +29,13 @@ const FristSection = ({ index }) => {
             alt="image1"
           />
         </Fade>
-        <img
-          src={require("../images/greenmouse.svg")}
-          className="FirstSection-greenmouse"
-          alt="FirstSectiongreenmouse"
-        />
+        <Jump top duration={3500} forever={true}>
+          <img
+            src={require("../images/greenmouse.svg")}
+            className="FirstSection-greenmouse"
+            alt="FirstSectiongreenmouse"
+          />
+        </Jump>
       </div>
 
       <div className="FirstSectionrightSide">

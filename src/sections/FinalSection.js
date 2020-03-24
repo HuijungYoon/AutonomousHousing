@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/FinalSection.scss";
 import { Kakaochannel } from "../App";
 import Bounce from "react-reveal/Bounce";
+
 const FinalSection = ({ index }) => {
   return (
     <>

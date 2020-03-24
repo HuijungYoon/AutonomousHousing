@@ -5,6 +5,7 @@ import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
 import FadeInRightBig from "react-animations/lib/fadeInRightBig";
 import { Kakaochannel, afterLoad } from "../App";
 import Fade from "react-reveal/Fade";
+import Jump from "react-reveal/Jump";
 const FadeInLeftBigAnimation = keyframes`${FadeInLeftBig}`;
 export const FadeInLeftBigDiv = styled.div`
   animation: 2.5s ${FadeInLeftBigAnimation};

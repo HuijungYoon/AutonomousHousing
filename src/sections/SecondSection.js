@@ -3,6 +3,7 @@ import "../styles/SecondSection.scss";
 import { Kakaochannel } from "../App";
 import { FadeInLeftBigDiv } from "./FirstSection";
 import Fade from "react-reveal/Fade";
+import Jump from "react-reveal/Jump";
 const SecondSection = ({ index }) => {
   return (
     <>
@@ -14,11 +15,13 @@ const SecondSection = ({ index }) => {
             alt="image1"
           />
         </Fade>
-        <img
-          src={require("../images/greenmouse.svg")}
-          className="secondSection-greenmouse"
-          alt="secondSectiongreenmouse"
-        />
+        <Jump top duration={3500} forever={true}>
+          <img
+            src={require("../images/greenmouse.svg")}
+            className="secondSection-greenmouse"
+            alt="secondSectiongreenmouse"
+          />
+        </Jump>
       </div>
 
       <div className="secondSectionleftSide">

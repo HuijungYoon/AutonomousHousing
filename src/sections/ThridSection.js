@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/ThridSection.scss";
 import { Kakaochannel } from "../App";
 import Fade from "react-reveal/Fade";
-
+import Jump from "react-reveal/Jump";
 const ThridSection = ({ index }) => {
   return (
     <>
@@ -14,11 +14,13 @@ const ThridSection = ({ index }) => {
             alt="image1"
           />
         </Fade>
-        <img
-          src={require("../images/greenmouse.svg")}
-          className="ThridSection-greenmouse"
-          alt="ThridSectiongreenmouse"
-        />
+        <Jump top duration={3500} forever={true}>
+          <img
+            src={require("../images/greenmouse.svg")}
+            className="ThridSection-greenmouse"
+            alt="ThridSectiongreenmouse"
+          />
+        </Jump>
       </div>
 
       <div className="ThridSectionrightSide">
