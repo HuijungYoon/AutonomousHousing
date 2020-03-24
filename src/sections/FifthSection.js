@@ -31,7 +31,11 @@ const FifthSection = ({ index }) => {
         </Fade>
         <Fade right big when={index}>
           <div className="explainsqure">
-            <img src={require("../images/ellipse.png")} alt="chat" />
+            <img
+              src={require("../images/ellipse.png")}
+              className="ellipse"
+              alt="chat"
+            />
             <p>
               인근의 주차장에 주차장 사용권을 확보하는
               <br /> 경우 주차장 총수의 30%까지

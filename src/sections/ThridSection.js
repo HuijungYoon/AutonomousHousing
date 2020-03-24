@@ -32,7 +32,11 @@ const ThridSection = ({ index }) => {
 
         <Fade right big when={index}>
           <div className="explainsqure">
-            <img src={require("../images/ellipse.png")} alt="chat" />
+            <img
+              src={require("../images/ellipse.png")}
+              className="ellipse"
+              alt="chat"
+            />
             <p>
               2018년부터 시행된 &#60;빈집 및 소규모주택정
               <br />

@@ -31,7 +31,11 @@ const SixthSection = ({ index }) => {
         </Fade>
         <Fade left big when={index}>
           <div className="explainsqure">
-            <img src={require("../images/ellipse.png")} alt="chat" />
+            <img
+              src={require("../images/ellipse.png")}
+              className="ellipse"
+              alt="chat"
+            />
             <p>
               재개발, 재건축 사업의 경우
               <br /> 평균 8~10년이 소요되지만

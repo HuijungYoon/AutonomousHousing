@@ -99,9 +99,9 @@
     justify-content: center;
     align-items: center;
     .image1 {
-      max-width: 100%;
       display: block;
-      height: 50%;
+      width: 100%;
+      height: auto;
     }
     .thridSection-greenmouse {
       max-width: 100%;
@@ -118,8 +118,8 @@
     }
     .explainsqure {
       position: relative;
-      width: 37vw;
-      height: 38.1vh;
+      // width: 37vw;
+      // height: 38.1vh;
       top: 3.5%;
       left: 8%;
       //font-size: 46px;
@@ -137,11 +137,6 @@
 }
 @include media("<large") {
   .ThridSectionleftSide {
-    .image1 {
-      max-width: 100%;
-      display: block;
-      height: 40%;
-    }
     .ThridSection-greenmouse {
       max-width: 100%;
       height: 6%;
@@ -157,8 +152,8 @@
     }
     .explainsqure {
       position: relative;
-      width: 37vw;
-      height: 39.1vh;
+      // width: 37vw;
+      // height: 39.1vh;
       top: 3.5%;
       left: 8%;
       p {
@@ -172,9 +167,6 @@
 @include media("<medium") {
   .ThridSectionleftSide {
     .image1 {
-      max-width: 100%;
-      display: block;
-      height: 30%;
     }
     .ThridSection-greenmouse {
       max-width: 100%;
@@ -192,8 +184,8 @@
     }
     .explainsqure {
       position: relative;
-      width: 45vw;
-      height: 34.1vh;
+      // width: 45vw;
+      // height: 34.1vh;
       top: 10.5%;
       left: 8%;
       p {
@@ -232,6 +224,12 @@
       position: relative;
       width: 48vw;
       height: 34.1vh;
+      br {
+        display: none;
+      }
+      .ellipse {
+        display: none;
+      }
       top: 13.5%;
       left: 1%;
       p {

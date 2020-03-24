@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/FristSection.scss";
+import "../styles/FirstSection.scss";
 import styled, { keyframes } from "styled-components";
 import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
 import FadeInRightBig from "react-animations/lib/fadeInRightBig";
@@ -29,11 +29,13 @@ const FirstSection = ({ index }) => {
             alt="image1"
           />
         </Fade>
-        <img
-          src={require("../images/greenmouse.svg")}
-          className="FirstSection-greenmouse"
-          alt="FirstSectiongreenmouse"
-        />
+        <Jump top duration={3500} forever={true}>
+          <img
+            src={require("../images/greenmouse.svg")}
+            className="FirstSection-greenmouse"
+            alt="FirstSectiongreenmouse"
+          />
+        </Jump>
       </div>
 
       <div className="FirstSectionrightSide">
@@ -46,8 +48,9 @@ const FirstSection = ({ index }) => {
             <img
               src={require("../images/ellipse.png")}
               className="ellipse"
-              alt="chat"
+              alt="ellipse"
             />
+            <div className="h"></div>
             <p>
               2018년부터 시행된 &#60;빈집 및 소규모주택정
               <br />

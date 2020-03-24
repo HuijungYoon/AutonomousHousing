@@ -99,9 +99,10 @@
   //font-size: 46px;
   .secondSectionrightSide {
     .image1 {
-      max-width: 100%;
       display: block;
-      height: 50%;
+      //   height: 100%;
+      width: 100%;
+      height: auto;
     }
     .secondSection-greenmouse {
       max-width: 100%;
@@ -221,12 +222,13 @@
 }
 @include media("<small") {
   .secondSectionleftSide {
+    // margin-top: 30%;
     .secondSection-chat {
       display: none;
     }
     .titlesqure {
       position: relative;
-      top: 10%;
+      top: 30%;
       span {
         font-size: 18px;
       }
@@ -235,8 +237,14 @@
       position: relative;
       width: 48vw;
       height: 34.1vh;
-      top: 13.5%;
+      top: 35.5%;
       left: 1%;
+      br {
+        display: none;
+      }
+      .ellipse {
+        display: none;
+      }
       p {
         font-size: 4px;
         line-height: 20px;

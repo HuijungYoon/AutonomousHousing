@@ -95,9 +95,9 @@
   //font-size: 46px;
   .FourthSectionrightSide {
     .image1 {
-      max-width: 100%;
       display: block;
-      height: 50%;
+      width: 100%;
+      height: auto;
     }
     .FourthSection-greenmouse {
       max-width: 100%;
@@ -119,10 +119,11 @@
       top: 3.5%;
       left: 8%;
       //font-size: 46px;
+      br {
+        display: none;
+      }
       .ellipse {
-        max-width: 70%;
-        //display: block;
-        // height: 0%;
+        display: none;
       }
       p {
         font-size: 17px;

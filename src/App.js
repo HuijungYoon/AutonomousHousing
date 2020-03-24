@@ -11,7 +11,6 @@ import FifthSection from "./sections/FifthSection";
 import SixthSection from "./sections/SixthSection";
 import FinalSection from "./sections/FinalSection";
 import Test from "./sections/Test";
-import FristSection from "./sections/FristSection";
 
 export const Kakaochannel = () => {
   window.Kakao.Channel.chat({
@@ -58,7 +57,7 @@ function App() {
               <div className="section" onLoad={moveRightAutoPlay}>
                 {CarouselSection()}
               </div>
-              <div className="section">{FristSection({ index })}</div>
+              <div className="section">{FirstSection({ index })}</div>
               <div className="section">{SecondSection({ index })}</div>
               <div className="section">{ThridSection({ index })}</div>
               <div className="section">{FourthSection({ index })}</div>

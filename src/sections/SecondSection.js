@@ -33,7 +33,11 @@ const SecondSection = ({ index }) => {
 
         <Fade left big when={index}>
           <div className="explainsqure">
-            <img src={require("../images/ellipse.png")} alt="chat" />
+            <img
+              src={require("../images/ellipse.png")}
+              className="ellipse"
+              alt="chat"
+            />
             <p>
               자율주택정비사업의 금융지원
               <br /> 융자대상

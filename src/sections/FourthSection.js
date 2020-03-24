@@ -31,7 +31,11 @@ const FourthSection = ({ index }) => {
         </Fade>
         <Fade left big when={index}>
           <div className="explainsqure">
-            <img src={require("../images/ellipse.png")} alt="chat" />
+            <img
+              src={require("../images/ellipse.png")}
+              className="ellipse"
+              alt="chat"
+            />
             <p>
               LH공사에서 신축물량을 주변시세대로 전량
               <br /> 매입해 미분양 리스크를 완전히 해소했습니
