@@ -20,6 +20,7 @@ export const Kakaochannel = () => {
 };
 
 function App() {
+  console.log("hello");
   const [index, setIndex] = useState(null);
   const onLeave = (origin, destination, direction) => {
     console.log("Leaving section " + origin.index);
