@@ -37,6 +37,7 @@ const ThridSection = ({ index }) => {
               className="ellipse"
               alt="chat"
             />
+            <div className="h"></div>
             <p>
               2018년부터 시행된 &#60;빈집 및 소규모주택정
               <br />

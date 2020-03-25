@@ -21,6 +21,7 @@ const FinalSection = ({ index }) => {
               className="ellipse"
               alt="ellipse"
             />
+            <div className="h" />
             <p>
               1. 국내유일의 자율주택정비사업 전문업체입니다. <br />
               <br />

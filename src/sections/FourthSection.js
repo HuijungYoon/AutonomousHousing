@@ -36,6 +36,7 @@ const FourthSection = ({ index }) => {
               className="ellipse"
               alt="chat"
             />
+            <div className="h"></div>
             <p>
               LH공사에서 신축물량을 주변시세대로 전량
               <br /> 매입해 미분양 리스크를 완전히 해소했습니

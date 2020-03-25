@@ -38,6 +38,7 @@ const SecondSection = ({ index }) => {
               className="ellipse"
               alt="chat"
             />
+            <div className="h"></div>
             <p>
               자율주택정비사업의 금융지원
               <br /> 융자대상

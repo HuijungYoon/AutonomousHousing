@@ -36,6 +36,7 @@ const SixthSection = ({ index }) => {
               className="ellipse"
               alt="chat"
             />
+            <div className="h" />
             <p>
               재개발, 재건축 사업의 경우
               <br /> 평균 8~10년이 소요되지만

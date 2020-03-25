@@ -36,6 +36,7 @@ const FifthSection = ({ index }) => {
               className="ellipse"
               alt="chat"
             />
+            <div className="h" />
             <p>
               인근의 주차장에 주차장 사용권을 확보하는
               <br /> 경우 주차장 총수의 30%까지

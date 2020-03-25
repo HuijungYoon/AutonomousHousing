@@ -59,6 +59,9 @@
   background: #1bc12c;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
+  .h {
+    margin-bottom: 2%;
+  }
   p {
     font-family: Noto Sans KR;
     font-style: normal;
@@ -235,6 +238,7 @@
       height: 34.1vh;
       top: 13.5%;
       left: 1%;
+
       p {
         font-size: 12px;
         line-height: 20px;
