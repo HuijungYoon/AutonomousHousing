@@ -63,7 +63,8 @@
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
+    // font-size: 28px;
+    font-size: 2em;
     line-height: 41px;
     display: flex;
     align-items: center;
@@ -126,8 +127,8 @@
         display: none;
       }
       p {
-        font-size: 17px;
-        line-height: 41px;
+        // font-size: 17px;
+        // line-height: 41px;
       }
     }
   }
@@ -194,8 +195,8 @@
       top: 10.5%;
       left: 8%;
       p {
-        font-size: 12px;
-        line-height: 25px;
+        // font-size: 12px;
+        // line-height: 25px;
       }
     }
     .FourthSection-chat {

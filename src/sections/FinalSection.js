@@ -16,7 +16,11 @@ const FinalSection = ({ index }) => {
           />
 
           <div className="explainsqure">
-            <img src={require("../images/ellipse.png")} alt="chat" />
+            <img
+              src={require("../images/ellipse.png")}
+              className="ellipse"
+              alt="ellipse"
+            />
             <p>
               1. 국내유일의 자율주택정비사업 전문업체입니다. <br />
               <br />
