@@ -76,8 +76,8 @@
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
-    //font-size: 2em;
+    //font-size: 28px;
+    font-size: 2em;
     line-height: 41px;
     display: flex;
     align-items: center;
@@ -222,8 +222,6 @@
       top: 10.5%;
       left: 8%;
       p {
-        // font-size: 12px;
-        //line-height: 25px;
       }
     }
     .FirstSection-chat {
@@ -260,7 +258,7 @@
       top: 13.5%;
       left: 1%;
       p {
-        font-size: 4px;
+        //font-size: 4px;
         line-height: 0px;
       }
     }
