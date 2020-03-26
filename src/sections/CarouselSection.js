@@ -12,21 +12,27 @@ const sectionOneData = [
   {
     id: 1,
     className: "firstSlide",
-    backgroundImage: require("../images/carousel_image1.png"),
+    // backgroundImage: require("../images/carousel_image1.png"),
+    backgroundImage:
+      "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/carousel_image1.png?alt=media&token=5be2ef8c-d70a-4d6b-be9a-33865c7c27a3",
     title: "한국자율주택이 함께합니다!",
     subTitle: "오래된 주택을 보유하고 계신다면"
   },
   {
     id: 2,
     className: "secondSlide",
-    backgroundImage: require("../images/carousel_image2.png"),
+    // backgroundImage: require("../images/carousel_image2.png"),
+    backgroundImage:
+      "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/carousel_image2.png?alt=media&token=3eb7e2a8-8623-43c4-8c5a-df070c8af8cf",
     title: "오래되고 낡은 집, 고민이시죠?",
     subTitle: "오래된 주택을 보유하고 계신다면"
   },
   {
     id: 3,
     className: "thridSlide",
-    backgroundImage: require("../images/carousel_image3.png"),
+    // backgroundImage: require("../images/carousel_image3.png"),
+    backgroundImage:
+      "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/carousel_image3.png?alt=media&token=b2b6ec01-1ed3-48df-8047-0df0162734b0",
     title: "자율주택정비사업을 신청하세요",
     subTitle: "오래된 주택을 보유하고 계신다면"
   },
@@ -34,7 +40,9 @@ const sectionOneData = [
   {
     id: 4,
     className: "fourthSlide",
-    backgroundImage: require("../images/carousel_image4.png"),
+    //  backgroundImage: require("../images/carousel_image4.png"),
+    backgroundImage:
+      "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/carousel_image4.png?alt=media&token=e987988f-a92c-4af4-a194-b34053120f41",
     title: "정부가 사업비를 지원합니다",
     subTitle: "오래된 주택을 보유하고 계신다면"
   }
