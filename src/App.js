@@ -10,7 +10,6 @@ import FourthSection from "./sections/FourthSection";
 import FifthSection from "./sections/FifthSection";
 import SixthSection from "./sections/SixthSection";
 import FinalSection from "./sections/FinalSection";
-import Test from "./sections/Test";
 
 export const Kakaochannel = () => {
   window.Kakao.Channel.chat({

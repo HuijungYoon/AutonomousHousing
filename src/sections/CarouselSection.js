@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Carousel.scss";
 // import "../style.css";
 import cn from "classnames";
 import { Row, Col } from "antd";
 import Jump from "react-reveal/Jump";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import LazyBackground from "../components/common/LazyBackground";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 const sectionOneData = [
   {
     id: 1,
@@ -49,6 +53,7 @@ export const secionOneList = sectionOneData.map(x => {
         className="chat"
         alt="chat"
       />
+
       <a className="CarouselSection-chat-mobileversion-a" href="tel:16442258">
         <img
           src={require("../images/chat.svg")}
@@ -64,7 +69,11 @@ export const secionOneList = sectionOneData.map(x => {
           alt="mouse"
         />
       </Jump>
-      <div className={cn("slide", x.className)}>
+      <LazyBackground
+        className={cn("slide", x.className)}
+        src={x.backgroundImage}
+        placeholder={x.backgroundImage}
+      >
         <img src={require("../images/logo.png")} className="logo" alt="logo" />
 
         <Row>
@@ -84,7 +93,28 @@ export const secionOneList = sectionOneData.map(x => {
           </Col>
           <Col span={24}></Col>
         </Row>
-      </div>
+      </LazyBackground>
+      {/* <div className={cn("slide", x.className)}>
+        <img src={require("../images/logo.png")} className="logo" alt="logo" />
+
+        <Row>
+          <Col span={24}>
+            <span className={cn("slid", "title")}>{x.title}</span>
+          </Col>
+          <Col span={24}>
+            <span className={cn("slid", "subtitle")}>{x.subTitle}</span>
+          </Col>
+          <Col span={24}>
+            <img
+              style={{ visibility: "hidden" }}
+              src={require("../images/mousescroll.svg")}
+              className="mouseScrollDown"
+              alt="mouse"
+            />
+          </Col>
+          <Col span={24}></Col>
+        </Row>
+      </div> */}
     </>
   );
 });

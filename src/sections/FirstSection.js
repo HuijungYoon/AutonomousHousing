@@ -16,8 +16,7 @@ export const FadeInRightBigDiv = styled.div`
 `;
 
 const FirstSection = ({ index }) => {
-  console.log("page1");
-  console.log(index);
+  console.log(`page1 is ${index}`);
 
   return (
     <>

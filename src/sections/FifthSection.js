@@ -3,6 +3,7 @@ import "../styles/FifthSection.scss";
 import { Kakaochannel } from "../App";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
+
 const FifthSection = ({ index }) => {
   return (
     <>
