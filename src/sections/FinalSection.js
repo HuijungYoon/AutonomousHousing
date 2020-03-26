@@ -12,6 +12,7 @@ const FinalSection = ({ index }) => {
 
           <img
             src={require("../images/finalSection_image1.png")}
+            className="image1"
             alt="fianlImage"
           />
 

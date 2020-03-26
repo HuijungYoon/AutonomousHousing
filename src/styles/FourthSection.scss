@@ -25,10 +25,14 @@
   width: 50%;
   background: #ffffff;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
 }
 .FourthSectionleftSide .titlesqure {
   float: left;
-  margin-top: 196px;
+  margin-top: 12%;
   width: 46vw;
   height: 12vh;
   background: #eeffcb;
@@ -47,15 +51,14 @@
 .FourthSectionleftSide .explainsqure {
   position: relative;
   width: 41vw;
-  height: 42.1vh;
+  height: 57.5vh;
   top: 3.5%;
-  left: 8%;
+  //left: 8%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @import "utils";
   background: #1bc12c;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
@@ -121,7 +124,7 @@
       width: 37vw;
       height: 38.1vh;
       top: 3.5%;
-      left: 8%;
+      //left: 8%;
       //font-size: 46px;
       br {
         display: none;
@@ -161,7 +164,7 @@
       width: 37vw;
       height: 39.1vh;
       top: 3.5%;
-      left: 8%;
+      // left: 8%;
       p {
         font-size: 15px;
         line-height: 35px;
@@ -196,7 +199,7 @@
       width: 45vw;
       height: 34.1vh;
       top: 10.5%;
-      left: 8%;
+      // left: 8%;
       p {
         // font-size: 12px;
         // line-height: 25px;
@@ -227,7 +230,7 @@
     }
     .titlesqure {
       position: relative;
-      top: 10%;
+      top: 30%;
       span {
         font-size: 18px;
       }
@@ -236,8 +239,8 @@
       position: relative;
       width: 48vw;
       height: 34.1vh;
-      top: 13.5%;
-      left: 1%;
+      top: 33.5%;
+      left: 0%;
 
       p {
         font-size: 12px;

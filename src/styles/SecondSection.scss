@@ -36,6 +36,7 @@
   height: 12vh;
   background: #eeffcb;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   span {
@@ -48,17 +49,22 @@
   }
 }
 .secondSectionleftSide {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
   .explainsqure {
     position: relative;
     width: 41vw;
-
     height: 57.5vh;
-    top: 3.5%;
-    left: 9%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 3.5%;
+    // top: 3.5%;
+    // left: 9%;
+
     background: #1bc12c;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -200,7 +206,7 @@
       width: 45vw;
       height: 34.1vh;
       top: 10.5%;
-      left: 8%;
+      //left: 8%;
       p {
         // font-size: 12px;
         // line-height: 25px;
@@ -226,7 +232,6 @@
 }
 @include media("<small") {
   .secondSectionleftSide {
-    // margin-top: 30%;
     .secondSection-chat {
       display: none;
     }
@@ -241,8 +246,8 @@
       position: relative;
       width: 48vw;
       height: 34.1vh;
-      top: 35.5%;
-      left: 1%;
+      top: 33.5%;
+      left: 0%;
       br {
         display: none;
       }

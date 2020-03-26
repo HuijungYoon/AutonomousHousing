@@ -147,7 +147,11 @@
     // max-width: 1440px;
     // max-height: 1024px;
     /* 한국자율주택이 함께합니다 */
-
+    img {
+      width: 40%;
+      display: block;
+      height: auto;
+    }
     span {
       margin-top: 3%;
       font-family: Noto Sans KR;
