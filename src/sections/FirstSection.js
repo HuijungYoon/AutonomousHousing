@@ -6,6 +6,8 @@ import FadeInRightBig from "react-animations/lib/fadeInRightBig";
 import { Kakaochannel, afterLoad } from "../App";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
+import { chat, ellipse } from "./CarouselSection";
+
 const FadeInLeftBigAnimation = keyframes`${FadeInLeftBig}`;
 export const FadeInLeftBigDiv = styled.div`
   animation: 2.5s ${FadeInLeftBigAnimation};
@@ -16,21 +18,19 @@ export const FadeInRightBigDiv = styled.div`
 `;
 
 const FirstSection = ({ index, origin }) => {
-  console.log(`page1 is ${index}`);
-
+  const firstMainImage =
+    "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/firstsection_image1-min.png?alt=media&token=a764b621-c8bc-4a7a-982f-323dd9fd6ed0";
+  const greenMouseImage =
+    "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/greenmouse.svg?alt=media&token=84b3a131-9d97-4c83-84ce-1482d1bc7aa7";
   return (
     <>
       <div className="FirstSectionleftSide">
         <Fade left big when={index}>
-          <img
-            src={require("../images/firstsection_image1.png")}
-            className="image1"
-            alt="image1"
-          />
+          <img src={firstMainImage} className="image1" alt="image1" />
         </Fade>
         <Jump top duration={3500} forever={true}>
           <img
-            src={require("../images/greenmouse.svg")}
+            src={greenMouseImage}
             className="FirstSection-greenmouse"
             alt="FirstSectiongreenmouse"
           />
@@ -44,11 +44,7 @@ const FirstSection = ({ index, origin }) => {
           </div>
 
           <div className="explainsqure">
-            <img
-              src={require("../images/ellipse.png")}
-              className="ellipse"
-              alt="ellipse"
-            />
+            <img src={ellipse} className="ellipse" alt="ellipse" />
             <div className="h"></div>
             <p>
               2018년부터 시행된 &#60;빈집 및 소규모주택정
@@ -65,14 +61,14 @@ const FirstSection = ({ index, origin }) => {
         </Fade>
 
         <img
-          src={require("../images/chat.svg")}
+          src={chat}
           className="FirstSection-chat"
           alt="FirstSectionchat"
           onClick={Kakaochannel}
         />
         <a className="FirstSection-chat-mobileversion-a" href="tel:16442258">
           <img
-            src={require("../images/chat.svg")}
+            src={chat}
             className="FirstSection-chat-mobileversion"
             alt="FirstSectionchat"
           />

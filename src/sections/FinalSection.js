@@ -2,26 +2,23 @@ import React from "react";
 import "../styles/FinalSection.scss";
 import { Kakaochannel } from "../App";
 import Bounce from "react-reveal/Bounce";
+import { ellipse, chat } from "./CarouselSection";
 
 const FinalSection = ({ index }) => {
+  const finalMainImage =
+    "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/finalSection_image1.png?alt=media&token=feb54b37-e8bc-4f01-ac49-0648afd8c0e5";
+  const footerlogo =
+    "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/footerlogo.png?alt=media&token=b223b0ae-1e77-401d-82f7-2877178d907c";
   return (
     <>
       <Bounce top cascade when={index}>
         <div className="FinalSection">
           <span>한국자율주택이 함께합니다</span>
 
-          <img
-            src={require("../images/finalSection_image1.png")}
-            className="image1"
-            alt="fianlImage"
-          />
+          <img src={finalMainImage} className="image1" alt="fianlImage" />
 
           <div className="explainsqure">
-            <img
-              src={require("../images/ellipse.png")}
-              className="ellipse"
-              alt="ellipse"
-            />
+            <img src={ellipse} className="ellipse" alt="ellipse" />
             <div className="h" />
             <p>
               1. 국내유일의 자율주택정비사업 전문업체입니다. <br />
@@ -40,11 +37,7 @@ const FinalSection = ({ index }) => {
       </Bounce>
       <Bounce top cascade when={index}>
         <div className="footersqure">
-          <img
-            src={require("../images/footerlogo.png")}
-            className="footer-logo"
-            alt="logo"
-          />
+          <img src={footerlogo} className="footer-logo" alt="logo" />
           <span>
             한국자율주택(주) | 대표 김지한 | 사업자등록번호 709-87-01524 |
             대표번호 1644-2258
@@ -54,14 +47,14 @@ const FinalSection = ({ index }) => {
             서울특별시 구록구 디지털로31길 12 태평양물산 별관2층 넥스트데이 84호
           </span>
           <img
-            src={require("../images/chat.svg")}
+            src={chat}
             className="finalSection-chat"
             alt="finalSection-chat"
             onClick={Kakaochannel}
           />
           <a className="FinalSection-chat-mobileversion-a" href="tel:16442258">
             <img
-              src={require("../images/chat.svg")}
+              src={chat}
               className="FinalSection-chat-mobileversion"
               alt="FinalSectionchat"
             />

@@ -3,20 +3,19 @@ import "../styles/ThridSection.scss";
 import { Kakaochannel } from "../App";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
+import { ellipse, chat, greenMouseImage } from "./CarouselSection";
 const ThridSection = ({ index }) => {
+  const thridMainImage =
+    "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/thridsection_image1.png?alt=media&token=58a5cabe-529a-420c-b4d8-488acb722938";
   return (
     <>
       <div className="ThridSectionleftSide">
         <Fade left big when={index}>
-          <img
-            src={require("../images/thridsection_image1.png")}
-            className="image1"
-            alt="image1"
-          />
+          <img src={thridMainImage} className="image1" alt="image1" />
         </Fade>
         <Jump top duration={3500} forever={true}>
           <img
-            src={require("../images/greenmouse.svg")}
+            src={greenMouseImage}
             className="ThridSection-greenmouse"
             alt="ThridSectiongreenmouse"
           />
@@ -32,11 +31,7 @@ const ThridSection = ({ index }) => {
 
         <Fade right big when={index}>
           <div className="explainsqure">
-            <img
-              src={require("../images/ellipse.png")}
-              className="ellipse"
-              alt="chat"
-            />
+            <img src={ellipse} className="ellipse" alt="chat" />
             <div className="h"></div>
             <p>
               2018년부터 시행된 &#60;빈집 및 소규모주택정
@@ -53,14 +48,14 @@ const ThridSection = ({ index }) => {
         </Fade>
 
         <img
-          src={require("../images/chat.svg")}
+          src={chat}
           className="ThridSection-chat"
           alt="ThridSectionchat"
           onClick={Kakaochannel}
         />
         <a className="ThridSection-chat-mobileversion-a" href="tel:16442258">
           <img
-            src={require("../images/chat.svg")}
+            src={chat}
             className="ThridSection-chat-mobileversion"
             alt="ThridSectionchat"
           />

@@ -4,21 +4,20 @@ import { Kakaochannel } from "../App";
 import { FadeInLeftBigDiv } from "./FirstSection";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
+import { greenMouseImage, chat, ellipse } from "./CarouselSection";
 const SecondSection = ({ index }) => {
   console.log(`page1 is ${index}`);
+  const secondMainImage =
+    "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/secondsection_image1.png?alt=media&token=591cf8eb-8a35-4a2d-a724-7d61192099da";
   return (
     <>
       <div className="secondSectionrightSide">
         <Fade right big when={index}>
-          <img
-            src={require("../images/secondsection_image1.png")}
-            className="image1"
-            alt="image1"
-          />
+          <img src={secondMainImage} className="image1" alt="image1" />
         </Fade>
         <Jump top duration={3500} forever={true}>
           <img
-            src={require("../images/greenmouse.svg")}
+            src={greenMouseImage}
             className="secondSection-greenmouse"
             alt="secondSectiongreenmouse"
           />
@@ -34,11 +33,7 @@ const SecondSection = ({ index }) => {
 
         <Fade left big when={index}>
           <div className="explainsqure">
-            <img
-              src={require("../images/ellipse.png")}
-              className="ellipse"
-              alt="chat"
-            />
+            <img src={ellipse} className="ellipse" alt="chat" />
             <div className="h"></div>
             <p>
               자율주택정비사업의 금융지원
@@ -56,14 +51,14 @@ const SecondSection = ({ index }) => {
           </div>
         </Fade>
         <img
-          src={require("../images/chat.svg")}
+          src={chat}
           className="secondSection-chat"
           alt="secondSectionchat"
           onClick={Kakaochannel}
         />
         <a className="secondSection-chat-mobileversion-a" href="tel:16442258">
           <img
-            src={require("../images/chat.svg")}
+            src={chat}
             className="secondSection-chat-mobileversion"
             alt="secondSectionchat"
           />

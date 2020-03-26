@@ -3,20 +3,19 @@ import "../styles/FourthSection.scss";
 import { Kakaochannel } from "../App";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
+import { greenMouseImage, ellipse, chat } from "./CarouselSection";
 const FourthSection = ({ index }) => {
+  const fourtMainImage =
+    "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/fourthSection_image1.png?alt=media&token=ebf5a11e-0bd7-48b1-85ef-90cd53c3bf1a";
   return (
     <>
       <div className="FourthSectionrightSide">
         <Fade right big when={index}>
-          <img
-            src={require("../images/fourthSection_image1.png")}
-            className="image1"
-            alt="image1"
-          />
+          <img src={fourtMainImage} className="image1" alt="image1" />
         </Fade>
         <Jump top duration={3500} forever={true}>
           <img
-            src={require("../images/greenmouse.svg")}
+            src={greenMouseImage}
             className="FourthSection-greenmouse"
             alt="FourthSectiongreenmouse"
           />
@@ -31,11 +30,7 @@ const FourthSection = ({ index }) => {
         </Fade>
         <Fade left big when={index}>
           <div className="explainsqure">
-            <img
-              src={require("../images/ellipse.png")}
-              className="ellipse"
-              alt="chat"
-            />
+            <img src={ellipse} className="ellipse" alt="chat" />
             <div className="h"></div>
             <p>
               LH공사에서 신축물량을 주변시세대로 전량
@@ -53,7 +48,7 @@ const FourthSection = ({ index }) => {
         </Fade>
 
         <img
-          src={require("../images/chat.svg")}
+          src={chat}
           className="FourthSection-chat"
           alt="FourthSectionchat"
           onClick={Kakaochannel}
@@ -61,7 +56,7 @@ const FourthSection = ({ index }) => {
 
         <a className="FourthSection-chat-mobileversion-a" href="tel:16442258">
           <img
-            src={require("../images/chat.svg")}
+            src={chat}
             className="FourthSection-chat-mobileversion"
             alt="FourthSectionchat"
           />
