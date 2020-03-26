@@ -5,6 +5,7 @@ import { FadeInLeftBigDiv } from "./FirstSection";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 const SecondSection = ({ index }) => {
+  console.log(`page1 is ${index}`);
   return (
     <>
       <div className="secondSectionrightSide">

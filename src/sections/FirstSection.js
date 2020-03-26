@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/FirstSection.scss";
 import styled, { keyframes } from "styled-components";
 import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
@@ -15,7 +15,7 @@ export const FadeInRightBigDiv = styled.div`
   animation: 2.5s ${FadeInRightBigAnimation};
 `;
 
-const FirstSection = ({ index }) => {
+const FirstSection = ({ index, origin }) => {
   console.log(`page1 is ${index}`);
 
   return (

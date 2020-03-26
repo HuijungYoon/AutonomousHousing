@@ -39,6 +39,7 @@ const sectionOneData = [
     subTitle: "오래된 주택을 보유하고 계신다면"
   }
 ];
+
 const Kakaochannel = () => {
   window.Kakao.Channel.chat({
     channelPublicId: "_nUzxhxb" // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
