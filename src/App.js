@@ -20,19 +20,32 @@ export const Kakaochannel = () => {
 function App() {
   console.log("hello");
   const [index, setIndex] = useState(null);
+  const [last, setLast] = useState(false);
   const onLeave = (origin, destination, direction) => {
-    console.log("Leaving section " + origin.index);
-    console.log(`direction is ${direction}`);
+    //console.log("Leaving section " + setIndex(destination.index));
   };
   const afterLoad = (origin, destination, direction) => {
-    console.log("After load: " + setIndex(destination.index));
+    //setIndex(destination.index);
+    setIndex(direction);
+    // setLast(destination.isFirst);
+    // console.log(destination);
+    console.log(index);
+    // alert(`direction is ${destination}`);
   };
 
   useEffect(() => {
     window.Kakao.init("d9eadaa9148988d3614b4e8c77594f10");
     console.log("호출되었어요");
   }, []);
-  const tempNum = 1;
+
+  // useEffect(() => {
+  //   return () => {
+  //     if (index === 0) {
+  //       setIndex(null);
+  //     }
+  //   };
+  // }, [index]);
+
   return (
     <>
       <ReactFullpage
@@ -58,7 +71,7 @@ function App() {
               <div className="section" onLoad={moveRightAutoPlay}>
                 {CarouselSection()}
               </div>
-              <div className="section">{FirstSection({ index, tempNum })}</div>
+              <div className="section">{FirstSection({ index, last })}</div>
               <div className="section">{SecondSection({ index })}</div>
               <div className="section">{ThridSection({ index })}</div>
               <div className="section">{FourthSection({ index })}</div>

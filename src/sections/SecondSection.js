@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 import { greenMouseImage, chat, ellipse } from "./CarouselSection";
 const SecondSection = ({ index }) => {
-  console.log(`page1 is ${index}`);
+  //console.log(`page1 is ${index}`);
   const secondMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/secondsection_image1.png?alt=media&token=591cf8eb-8a35-4a2d-a724-7d61192099da";
   return (
