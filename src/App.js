@@ -48,7 +48,7 @@ function App() {
           const moveRightAutoPlay = () => {
             setInterval(() => {
               fullpageApi.moveSlideRight();
-            }, 9000);
+            }, 4000);
           };
 
           return (
@@ -56,7 +56,7 @@ function App() {
               <div className="section" onLoad={moveRightAutoPlay}>
                 {CarouselSection()}
               </div>
-              <div className="section">{FirstSection({ index, origin })}</div>
+              <div className="section">{FirstSection({ index })}</div>
               <div className="section">{SecondSection({ index })}</div>
               <div className="section">{ThridSection({ index })}</div>
               <div className="section">{FourthSection({ index })}</div>
