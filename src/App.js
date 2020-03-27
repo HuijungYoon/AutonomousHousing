@@ -22,15 +22,17 @@ function App() {
   const [index, setIndex] = useState(null);
   const onLeave = (origin, destination, direction) => {
     console.log("Leaving section " + origin.index);
+    console.log(`direction is ${direction}`);
   };
   const afterLoad = (origin, destination, direction) => {
     console.log("After load: " + setIndex(destination.index));
   };
 
   useEffect(() => {
-    window.Kakao.init("ff6cbca4d658b678425348f6f830831e");
+    window.Kakao.init("d9eadaa9148988d3614b4e8c77594f10");
     console.log("호출되었어요");
   }, []);
+  const tempNum = 1;
   return (
     <>
       <ReactFullpage
@@ -56,7 +58,7 @@ function App() {
               <div className="section" onLoad={moveRightAutoPlay}>
                 {CarouselSection()}
               </div>
-              <div className="section">{FirstSection({ index })}</div>
+              <div className="section">{FirstSection({ index, tempNum })}</div>
               <div className="section">{SecondSection({ index })}</div>
               <div className="section">{ThridSection({ index })}</div>
               <div className="section">{FourthSection({ index })}</div>

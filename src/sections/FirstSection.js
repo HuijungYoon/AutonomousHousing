@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/FirstSection.scss";
 import styled, { keyframes } from "styled-components";
 import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
@@ -17,11 +17,12 @@ export const FadeInRightBigDiv = styled.div`
   animation: 2.5s ${FadeInRightBigAnimation};
 `;
 
-const FirstSection = ({ index, origin }) => {
+const FirstSection = ({ index, tempNum }) => {
   const firstMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/firstsection_image1-min.png?alt=media&token=a764b621-c8bc-4a7a-982f-323dd9fd6ed0";
   const greenMouseImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/greenmouse.svg?alt=media&token=84b3a131-9d97-4c83-84ce-1482d1bc7aa7";
+
   return (
     <>
       <div className="FirstSectionleftSide">
