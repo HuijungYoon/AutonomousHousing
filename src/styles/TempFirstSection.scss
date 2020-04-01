@@ -1,6 +1,5 @@
 @import "utils";
-
-.ThridSectionleftSide {
+.FirstSectionleftSide {
   float: left;
   width: 50%;
   background: #fdffe8;
@@ -9,11 +8,14 @@
   justify-content: center;
   align-items: center;
   .image1 {
-    max-width: 100%;
+    // max-width: 100%;
     display: block;
+    //   height: 100%;
+    max-width: 100%;
     height: auto;
   }
-  .ThridSection-greenmouse {
+
+  .FirstSection-greenmouse {
     bottom: 1%;
     right: 48%;
     position: absolute;
@@ -21,7 +23,7 @@
   }
 }
 
-.ThridSectionrightSide {
+.FirstSectionrightSide {
   float: left;
   width: 50%;
   background: #ffffff;
@@ -29,36 +31,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
-}
-.ThridSectionrightSide .titlesqure {
-  float: right;
-  // margin-top: 196px;
-  margin-top: 12%;
-  width: 46vw;
-  height: 12vh;
-  background: #eeffcb;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  span {
-    font-family: Noto Sans KR;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    color: #48be00;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.FirstSectionrightSide {
+  .titlesqure {
+    float: right;
+    height: 12vh;
+    width: 46vw;
+    background: #eeffcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-family: Noto Sans KR;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+      color: #48be00;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    }
   }
 }
-.ThridSectionrightSide .explainsqure {
+.FirstSectionrightSide .h {
+  margin-bottom: 5%;
+}
+
+.FirstSectionrightSide .explainsqure {
   position: relative;
-  // width: 41vw;
-  // height: 45.1vh;
+  //   width: 41vw;
+  //   height: 45.1vh;
+
   width: 41vw;
   height: 57.5vh;
 
+  // left: 8%;
   top: 3.5%;
-  //left: 8%;
+  // right: 5%;
 
   display: flex;
   flex-direction: column;
@@ -68,19 +76,19 @@
   background: #1bc12c;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
-  .h {
-    margin-bottom: 3%;
-  }
+
   .ellipse {
     position: absolute;
     top: 5%;
   }
+
   p {
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: 500;
     //font-size: 28px;
     font-size: 2em;
+    //line-height: 41px;
     line-height: 1.45em;
     display: flex;
     align-items: center;
@@ -89,15 +97,14 @@
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   }
 }
-.ThridSectionrightSide .ThridSection-chat {
+.FirstSectionrightSide .FirstSection-chat {
   bottom: 2%;
   right: 3%;
   position: absolute;
   z-index: 3000;
   cursor: pointer;
 }
-
-.ThridSectionrightSide .ThridSection-chat-mobileversion-a {
+.FirstSectionrightSide .FirstSection-chat-mobileversion-a {
   bottom: 2%;
   right: 3%;
   position: absolute;
@@ -109,20 +116,23 @@
 //반응형
 
 @include media("<huge") {
-  .ThridSectionleftSide {
+  //font-size: 46px;
+
+  .FirstSectionleftSide {
     justify-content: center;
     align-items: center;
     .image1 {
+      max-width: 100%;
       display: block;
-      width: 100%;
       height: auto;
     }
-    .thridSection-greenmouse {
+    .FirstSection-greenmouse {
       max-width: 100%;
       height: 7%;
     }
   }
-  .ThridSectionrightSide {
+  .FirstSectionrightSide {
+    //justify-content: center;
     .titlesqure {
       width: 46vw;
       height: 8vh;
@@ -133,28 +143,30 @@
     .explainsqure {
       position: relative;
 
+      //      top: 3.5%;
+      //left: 8%;
+      font-size: 10px;
+      line-height: 0.5em;
+
       .ellipse {
-        max-width: 70%;
-        //display: block;
-        // height: 0%;
-      }
-      p {
-        font-size: 20px;
-        // font-size: 17px;
-        // line-height: 41px;
+        max-width: 100%;
       }
     }
   }
 }
 @include media("<large") {
-  .ThridSectionleftSide {
-    .ThridSection-greenmouse {
+  .FirstSectionleftSide {
+    .FirstSection-greenmouse {
       max-width: 100%;
       height: 6%;
+      .image1 {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
     }
   }
-  .ThridSectionrightSide {
-    justify-content: center;
+  .FirstSectionrightSide {
     .titlesqure {
       width: 46vw;
       height: 5vh;
@@ -164,27 +176,25 @@
     }
     .explainsqure {
       position: relative;
-      // width: 37vw;
-      // height: 39.1vh;
-      // top: 3.5%;
-      // left: 8%;
-      p {
-        // font-size: 15px;
-        // line-height: 35px;
-      }
+      top: 3.5%;
     }
   }
 }
 
 @include media("<medium") {
-  .ThridSectionleftSide {
-    .ThridSection-greenmouse {
+  .FirstSectionleftSide {
+    .image1 {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    .FirstSection-greenmouse {
       max-width: 100%;
       height: 5%;
     }
   }
 
-  .ThridSectionrightSide {
+  .FirstSectionrightSide {
     .titlesqure {
       position: relative;
       // top: 7%;
@@ -193,20 +203,19 @@
       }
     }
     .explainsqure {
-      position: relative;
-      // width: 45vw;
-      // height: 34.1vh;
-      //  top: 10.5%;
-      left: 8%;
-      p {
-        // font-size: 12px;
-        // line-height: 25px;
+      // top: 10.5%;
+      br {
+        display: none;
       }
+      .ellipse {
+        display: none;
+      }
+      position: relative;
     }
-    .ThridSection-chat {
+    .FirstSection-chat {
       display: none;
     }
-    .ThridSection-chat-mobileversion-a {
+    .FirstSection-chat-mobileversion-a {
       visibility: visible;
       height: 11%;
       position: absolute;
@@ -214,7 +223,7 @@
       cursor: pointer;
       bottom: -2%;
       right: 3%;
-      .ThridSection-chat-mobileversion {
+      .FirstSection-chat-mobileversion {
         max-width: 100%;
         height: 70%;
       }
@@ -222,8 +231,8 @@
   }
 }
 @include media("<small") {
-  .ThridSectionrightSide {
-    .ThridSection-chat {
+  .FirstSectionrightSide {
+    .FirstSection-chat {
       display: none;
     }
     .titlesqure {
@@ -232,23 +241,17 @@
     }
     .explainsqure {
       position: relative;
+
       width: 48vw;
       height: 34.1vh;
-      // top: 33.5%;
+      //top: 33.5%;
       left: 0%;
-      br {
-        display: none;
-      }
-      .ellipse {
-        display: none;
-      }
-
       p {
         font-size: 12px;
         line-height: 20px;
       }
     }
-    .ThridSection-chat-mobileversion-a {
+    .FirstSection-chat-mobileversion-a {
       visibility: visible;
       height: 11%;
       position: absolute;
@@ -256,7 +259,7 @@
       cursor: pointer;
       bottom: -2%;
       right: 3%;
-      .ThridSection-chat-mobileversion {
+      .FirstSection-chat-mobileversion {
         max-width: 100%;
         height: 70%;
       }

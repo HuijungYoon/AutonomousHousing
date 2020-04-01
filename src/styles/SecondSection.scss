@@ -12,14 +12,11 @@
     max-width: 100%;
     display: block;
     height: auto;
-    // width: 90%;
-    // height: auto;
   }
   .secondSection-greenmouse {
     bottom: 1%;
     right: 48%;
     position: absolute;
-    //z-index: 3000;
   }
 }
 
@@ -31,7 +28,6 @@
 }
 .secondSectionleftSide .titlesqure {
   float: left;
-  margin-top: 12%;
   width: 46vw;
   height: 12vh;
   background: #eeffcb;
@@ -51,7 +47,7 @@
 .secondSectionleftSide {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
+  justify-content: center;
   align-items: center;
   .explainsqure {
     position: relative;
@@ -110,15 +106,7 @@
 //반응형
 
 @include media("<huge") {
-  //font-size: 46px;
   .secondSectionrightSide {
-    // .image1 {
-    //   display: block;
-    //   //   height: 100%;
-    //   width: 100%;
-    //   height: auto;
-
-    // }
     .image1 {
       max-width: 100%;
       display: block;
