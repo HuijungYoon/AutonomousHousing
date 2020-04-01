@@ -51,7 +51,7 @@
 .secondSectionleftSide {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   .explainsqure {
     position: relative;
@@ -79,9 +79,9 @@
       font-family: Noto Sans KR;
       font-style: normal;
       font-weight: 500;
-      //font-size: 28px;
+
       font-size: 2em;
-      line-height: 41px;
+      line-height: 1.45em;
       display: flex;
       align-items: center;
       text-align: center;
@@ -124,6 +124,8 @@
     }
   }
   .secondSectionleftSide {
+    justify-content: center;
+    align-items: center;
     .titlesqure {
       width: 46vw;
       height: 8vh;
@@ -136,7 +138,7 @@
       width: 37vw;
       height: 38.1vh;
       //  top: 3.5%;
-      left: 8%;
+      // left: 8%;
       //font-size: 46px;
       .ellipse {
         max-width: 70%;
@@ -144,8 +146,8 @@
         // height: 0%;
       }
       p {
-        // font-size: 17px;
-        // line-height: 41px;
+        font-size: 20px;
+        //line-height: 0.5em;
       }
     }
   }
@@ -174,8 +176,7 @@
       position: relative;
       width: 37vw;
       height: 39.1vh;
-      // top: 3.5%;
-      left: 8%;
+
       p {
         // font-size: 15px;
         // line-height: 35px;
