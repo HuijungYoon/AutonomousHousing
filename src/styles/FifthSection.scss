@@ -109,9 +109,9 @@
     justify-content: center;
     align-items: center;
     .image1 {
+      max-width: 100%;
       display: block;
-      width: 100%;
-      height: auto;
+      height: 50%;
     }
     .FifthSection-greenmouse {
       max-width: 100%;
@@ -149,11 +149,6 @@
 }
 @include media("<large") {
   .FifthSectionleftSide {
-    .image1 {
-      max-width: 100%;
-      display: block;
-      height: 40%;
-    }
     .FifthSection-greenmouse {
       max-width: 100%;
       height: 6%;
@@ -183,11 +178,6 @@
 
 @include media("<medium") {
   .FifthSectionleftSide {
-    .image1 {
-      max-width: 100%;
-      display: block;
-      height: 30%;
-    }
     .FifthSection-greenmouse {
       max-width: 100%;
       height: 5%;

@@ -106,9 +106,9 @@
   //font-size: 46px;
   .FourthSectionrightSide {
     .image1 {
+      max-width: 100%;
       display: block;
-      width: 100%;
-      height: auto;
+      height: 50%;
     }
     .FourthSection-greenmouse {
       max-width: 100%;
@@ -146,11 +146,6 @@
 }
 @include media("<large") {
   .FourthSectionrightSide {
-    .image1 {
-      max-width: 100%;
-      display: block;
-      height: 40%;
-    }
     .FourthSection-greenmouse {
       max-width: 100%;
       height: 6%;
@@ -180,11 +175,6 @@
 
 @include media("<medium") {
   .FourthSectionrightSide {
-    .image1 {
-      max-width: 100%;
-      display: block;
-      height: 30%;
-    }
     .FourthSection-greenmouse {
       max-width: 100%;
       height: 5%;
