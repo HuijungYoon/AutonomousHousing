@@ -109,6 +109,16 @@
 
 //반응형
 
+@include media("<huge") {
+  .FirstSectionrightSide {
+    .explainsqure {
+      p {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
 @include media("<medium") {
   .FirstSectionleftSide {
     background-color: #ffffff;
