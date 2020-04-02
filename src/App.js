@@ -68,9 +68,9 @@ function App() {
 
           return (
             <div id="fullpage-wrapper">
-              {/* <div className="section" onLoad={moveRightAutoPlay}>
+              <div className="section" onLoad={moveRightAutoPlay}>
                 {CarouselSection()}
-              </div> */}
+              </div>
               <div className="section">{FirstSection({ index, last })}</div>
               <div className="section">{SecondSection({ index })}</div>
               <div className="section">{ThridSection({ index })}</div>

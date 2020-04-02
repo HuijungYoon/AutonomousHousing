@@ -102,82 +102,20 @@
 
 //반응형
 
-@include media("<huge") {
-  //font-size: 46px;
-
-  .FifthSectionleftSide {
-    justify-content: center;
-    align-items: center;
-    .image1 {
-      max-width: 100%;
-      display: block;
-      height: 50%;
-    }
-    .FifthSection-greenmouse {
-      max-width: 100%;
-      height: 7%;
-    }
-  }
-  .FifthSectionrightSide {
-    justify-content: center;
-    .titlesqure {
-      width: 46vw;
-      height: 8vh;
-      span {
-        font-size: 40px;
-      }
-    }
-    .explainsqure {
-      position: relative;
-      width: 37vw;
-      height: 38.1vh;
-      // top: 3.5%;
-      // left: 8%;
-      //font-size: 46px;
-      br {
-        display: none;
-      }
-      .ellipse {
-        display: none;
-      }
-      p {
-        font-size: 20px;
-        // line-height: 41px;
-      }
-    }
-  }
-}
-@include media("<large") {
-  .FifthSectionleftSide {
-    .FifthSection-greenmouse {
-      max-width: 100%;
-      height: 6%;
-    }
-  }
-  .FifthSectionrightSide {
-    .titlesqure {
-      width: 46vw;
-      height: 5vh;
-      span {
-        font-size: 30px;
-      }
-    }
-    .explainsqure {
-      position: relative;
-      width: 37vw;
-      height: 39.1vh;
-      // top: 3.5%;
-      // left: 8%;
-      p {
-        // font-size: 15px;
-        // line-height: 35px;
-      }
-    }
-  }
-}
-
 @include media("<medium") {
   .FifthSectionleftSide {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    .image1 {
+      width: 60%;
+      display: block;
+      height: auto;
+    }
     .FifthSection-greenmouse {
       max-width: 100%;
       height: 5%;
@@ -185,65 +123,35 @@
   }
 
   .FifthSectionrightSide {
+    width: 100%;
+    float: none;
+    height: 100%;
+    display: block;
     .titlesqure {
       position: relative;
-      // top: 7%;
+      margin-top: 5%;
+      height: 8vh;
+      width: 100%;
       span {
-        font-size: 20px;
+        font-size: 2em;
       }
     }
     .explainsqure {
-      position: relative;
-      width: 45vw;
-      height: 34.1vh;
-      // top: 10.5%;
-      // left: 8%;
+      height: 25%;
+      width: 100%;
+      br {
+        display: none;
+      }
+      .ellipse {
+        display: none;
+      }
       p {
-        // font-size: 12px;
-        // line-height: 25px;
+        font-size: 1.5em;
+        line-height: 1.2em;
       }
     }
     .FifthSection-chat {
       display: none;
-    }
-    .FifthSection-chat-mobileversion-a {
-      visibility: visible;
-      height: 11%;
-      position: absolute;
-      z-index: 100;
-      cursor: pointer;
-      bottom: -2%;
-      right: 3%;
-      .FifthSection-chat-mobileversion {
-        max-width: 100%;
-        height: 70%;
-      }
-    }
-  }
-}
-@include media("<small") {
-  .FifthSectionrightSide {
-    .FifthSection-chat {
-      display: none;
-    }
-    .titlesqure {
-      position: relative;
-      //top: 17%;
-      margin-top: 38.3%;
-      span {
-        font-size: 18px;
-      }
-    }
-    .explainsqure {
-      position: relative;
-      width: 48vw;
-      height: 34.1vh;
-      // top: 20%;
-      left: 1%;
-      p {
-        font-size: 12px;
-        line-height: 20px;
-      }
     }
     .FifthSection-chat-mobileversion-a {
       visibility: visible;
