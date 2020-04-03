@@ -23,6 +23,7 @@ function App() {
   const onLeave = (origin, destination, direction) => {
     //console.log("Leaving section " + setIndex(destination.index));
     console.log("test start");
+    console.log("test start");
     if (direction === "down") {
       setIndex(direction);
     }
