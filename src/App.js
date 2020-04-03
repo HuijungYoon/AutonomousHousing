@@ -30,6 +30,7 @@ function App() {
     // setLast(destination.isFirst);
     // console.log(destination);
     console.log(index);
+    console.log("test");
     // alert(`direction is ${destination}`);
   };
 
