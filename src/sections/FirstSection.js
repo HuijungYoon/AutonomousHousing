@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/FirstSection.scss";
 import styled, { keyframes } from "styled-components";
 import FadeInLeftBig from "react-animations/lib/fadeInLeftBig";
@@ -7,6 +7,7 @@ import { Kakaochannel, afterLoad } from "../App";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 import { chat, ellipse } from "./CarouselSection";
+import { Transition } from "react-transition-group";
 
 const FadeInLeftBigAnimation = keyframes`${FadeInLeftBig}`;
 export const FadeInLeftBigDiv = styled.div`
@@ -30,6 +31,7 @@ const FirstSection = ({ index, last }) => {
         <Fade left big when={index}>
           <img src={firstMainImage} className="image1" alt="image1" />
         </Fade>
+
         <Jump top duration={3500} forever={true}>
           <img
             src={greenMouseImage}
@@ -43,7 +45,7 @@ const FirstSection = ({ index, last }) => {
         <Fade right big when={index}>
           {/* <Fade right big duration={3500} forever={true}> */}
           <div className="titlesqure">
-            <span>용적률 상향</span>
+            <span>자율주택정비사업이란?</span>
           </div>
 
           <div className="explainsqure">
