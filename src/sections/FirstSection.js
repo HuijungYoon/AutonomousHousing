@@ -27,7 +27,7 @@ const FirstSection = ({ index, last }) => {
   return (
     <>
       <div className="FirstSectionleftSide">
-        <Fade left big when={index}>
+        <Fade left big when={index == "down"}>
           <img src={firstMainImage} className="image1" alt="image1" />
         </Fade>
         <Jump top duration={3500} forever={true}>
@@ -40,8 +40,8 @@ const FirstSection = ({ index, last }) => {
       </div>
 
       <div className="FirstSectionrightSide">
-        {/* <Fade right big when={index}> */}
-        <Fade right big duration={3500} forever={true}>
+        <Fade right big when={index}>
+          {/* <Fade right big duration={3500} forever={true}> */}
           <div className="titlesqure">
             <span>용적률 상향</span>
           </div>
