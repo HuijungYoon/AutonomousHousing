@@ -19,7 +19,6 @@ export const FadeInRightBigDiv = styled.div`
 `;
 
 const FirstSection = ({ index, last }) => {
-  console.log(last);
   const firstMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/firstsection_image1-min.png?alt=media&token=a764b621-c8bc-4a7a-982f-323dd9fd6ed0";
   const greenMouseImage =
