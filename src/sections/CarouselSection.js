@@ -79,13 +79,12 @@ export const secionOneList = sectionOneData.map(x => {
       <Jump top duration={3500} forever={true}>
         <img src={mousescroll} className="mouseScrollDownR" alt="mouse" />
       </Jump>
+      <img src={logo} className="logo" alt="logo" />
       <LazyBackground
         className={cn("slide", x.className)}
         src={x.backgroundImage}
         placeholder={x.backgroundImage}
       >
-        <img src={logo} className="logo" alt="logo" />
-
         <Row>
           <Col span={24}>
             <span className={cn("slid", "title")}>{x.title}</span>

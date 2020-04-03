@@ -18,7 +18,6 @@ export const Kakaochannel = () => {
 };
 
 function App() {
-  console.log("hello");
   const [index, setIndex] = useState(null);
   const [last, setLast] = useState(true);
   const onLeave = (origin, destination, direction) => {
@@ -30,13 +29,11 @@ function App() {
     // setLast(destination.isFirst);
     // console.log(destination);
     console.log(index);
-    console.log("test");
     // alert(`direction is ${destination}`);
   };
 
   useEffect(() => {
     window.Kakao.init("d9eadaa9148988d3614b4e8c77594f10");
-    console.log("호출되었어요");
   }, []);
 
   // useEffect(() => {
