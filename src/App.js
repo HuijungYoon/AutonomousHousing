@@ -19,13 +19,20 @@ export const Kakaochannel = () => {
 
 function App() {
   const [index, setIndex] = useState(null);
-  const [last, setLast] = useState(true);
+  const [isMount, setIsMount] = useState(true);
   const onLeave = (origin, destination, direction) => {
     //console.log("Leaving section " + setIndex(destination.index));
     console.log("test start");
     console.log("test start");
+    console.log("test start");
+    console.log("test start");
+    console.log("test start");
+    console.log("test start");
+    console.log("test start");
+    console.log("test dfjdkfjdfjdkfjdk");
     if (direction === "down") {
       setIndex(direction);
+      setIsMount(false);
     }
   };
   const afterLoad = (origin, destination, direction) => {
@@ -65,7 +72,7 @@ function App() {
               <div className="section" onLoad={moveRightAutoPlay}>
                 {CarouselSection()}
               </div>
-              <div className="section">{FirstSection({ index, last })}</div>
+              <div className="section">{FirstSection({ index, isMount })}</div>
               <div className="section">{SecondSection({ index })}</div>
               <div className="section">{ThridSection({ index })}</div>
               <div className="section">{FourthSection({ index })}</div>

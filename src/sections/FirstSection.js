@@ -18,7 +18,7 @@ export const FadeInRightBigDiv = styled.div`
   animation: 2.5s ${FadeInRightBigAnimation};
 `;
 
-const FirstSection = ({ index, last }) => {
+const FirstSection = ({ index, isMount }) => {
   const firstMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/firstsection_image1-min.png?alt=media&token=a764b621-c8bc-4a7a-982f-323dd9fd6ed0";
   const greenMouseImage =
@@ -27,7 +27,7 @@ const FirstSection = ({ index, last }) => {
   return (
     <>
       <div className="FirstSectionleftSide">
-        <Fade left big in={index}>
+        <Fade left big when={index} mountOnEnter={isMount}>
           <img src={firstMainImage} className="image1" alt="image1" />
         </Fade>
 
