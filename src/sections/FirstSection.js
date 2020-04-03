@@ -27,7 +27,7 @@ const FirstSection = ({ index, last }) => {
   return (
     <>
       <div className="FirstSectionleftSide">
-        <Fade left big when={index == "down"}>
+        <Fade left big when={index}>
           <img src={firstMainImage} className="image1" alt="image1" />
         </Fade>
         <Jump top duration={3500} forever={true}>
