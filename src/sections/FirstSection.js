@@ -40,7 +40,8 @@ const FirstSection = ({ index, last }) => {
       </div>
 
       <div className="FirstSectionrightSide">
-        <Fade right big when={index}>
+        {/* <Fade right big when={index}> */}
+        <Fade right big duration={3500} forever={true}>
           <div className="titlesqure">
             <span>용적률 상향</span>
           </div>
