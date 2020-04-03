@@ -24,25 +24,16 @@ function App() {
     //console.log("Leaving section " + setIndex(destination.index));
   };
   const afterLoad = (origin, destination, direction) => {
-    //setIndex(destination.index);
-    setIndex(direction);
-    // setLast(destination.isFirst);
-    // console.log(destination);
+    if (direction === "down") {
+      setIndex(direction);
+    }
+
     console.log(index);
-    // alert(`direction is ${destination}`);
   };
 
   useEffect(() => {
     window.Kakao.init("d9eadaa9148988d3614b4e8c77594f10");
   }, []);
-
-  // useEffect(() => {
-  //   return () => {
-  //     if (index === 0) {
-  //       setIndex(null);
-  //     }
-  //   };
-  // }, [index]);
 
   return (
     <>
