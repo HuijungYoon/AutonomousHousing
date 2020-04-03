@@ -22,11 +22,15 @@ function App() {
   const [last, setLast] = useState(true);
   const onLeave = (origin, destination, direction) => {
     //console.log("Leaving section " + setIndex(destination.index));
-  };
-  const afterLoad = (origin, destination, direction) => {
+    console.log("test start");
     if (direction === "down") {
       setIndex(direction);
     }
+  };
+  const afterLoad = (origin, destination, direction) => {
+    // if (direction === "down") {
+    //   setIndex(direction);
+    // }
 
     console.log(index);
   };
