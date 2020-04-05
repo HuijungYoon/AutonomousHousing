@@ -24,14 +24,8 @@ function App() {
     //console.log("Leaving section " + setIndex(destination.index));
     console.log("test start");
     console.log("test start");
-    console.log("test start");
-    console.log("test start");
-    console.log("test start");
-    console.log("test start");
-    console.log("test start");
-    console.log("test dfjdkfjdfjdkfjdk");
     if (direction === "down") {
-      setIndex(direction);
+      setIndex(true);
       setIsMount(true);
     }
   };
