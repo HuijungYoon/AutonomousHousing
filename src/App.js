@@ -32,7 +32,7 @@ function App() {
     console.log("test dfjdkfjdfjdkfjdk");
     if (direction === "down") {
       setIndex(direction);
-      setIsMount(false);
+      setIsMount(true);
     }
   };
   const afterLoad = (origin, destination, direction) => {
