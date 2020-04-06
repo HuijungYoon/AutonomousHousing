@@ -7,15 +7,34 @@ import { Kakaochannel, afterLoad } from "../App";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 import { chat, ellipse } from "./CarouselSection";
-import { Transition } from "react-transition-group";
 
 const FadeInLeftBigAnimation = keyframes`${FadeInLeftBig}`;
-export const FadeInLeftBigDiv = styled.div`
-  animation: 2.5s ${FadeInLeftBigAnimation};
-`;
 const FadeInRightBigAnimation = keyframes`${FadeInRightBig}`;
+export const FadeInLeftBigDiv = styled.div`
+  animation: 1.3s ${FadeInLeftBigAnimation};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 export const FadeInRightBigDiv = styled.div`
-  animation: 2.5s ${FadeInRightBigAnimation};
+  animation: 1.3s ${FadeInRightBigAnimation};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const FadeInRightBigTitleDiv = styled.div`
+  animation: 1.3s ${FadeInRightBigAnimation};
+`;
+export const FadeInRightBigExplainDiv = styled.div`
+  animation: 1.3s ${FadeInRightBigAnimation};
+`;
+
+export const FadeInLeftBigTitleDiv = styled.div`
+  animation: 1.3s ${FadeInLeftBigAnimation};
+`;
+export const FadeInLeftBigExplainDiv = styled.div`
+  animation: 1.3s ${FadeInLeftBigAnimation};
 `;
 
 const FirstSection = ({ index, isMount }) => {
@@ -27,10 +46,16 @@ const FirstSection = ({ index, isMount }) => {
   return (
     <>
       <div className="FirstSectionleftSide">
-        <Fade left big when={index} mountOnEnter={isMount}>
+        {/* <Fade left big when={index}>
           <img src={firstMainImage} className="image1" alt="image1" />
-        </Fade>
-
+        </Fade> */}
+        {index === true ? (
+          <FadeInLeftBigDiv>
+            <img src={firstMainImage} className="image1" alt="image1" />
+          </FadeInLeftBigDiv>
+        ) : (
+          ""
+        )}
         <Jump top duration={3500} forever={true}>
           <img
             src={greenMouseImage}
@@ -41,8 +66,8 @@ const FirstSection = ({ index, isMount }) => {
       </div>
 
       <div className="FirstSectionrightSide">
-        <Fade right big when={index}>
-          {/* <Fade right big duration={3500} forever={true}> */}
+        {/* <Fade right big when={index}>
+       
           <div className="titlesqure">
             <span>자율주택정비사업이란?</span>
           </div>
@@ -62,7 +87,37 @@ const FirstSection = ({ index, isMount }) => {
               <br />이 가능합니다.
             </p>
           </div>
-        </Fade>
+        </Fade> */}
+        {index === true ? (
+          <FadeInRightBigTitleDiv>
+            <div className="titlesqure">
+              <span>자율주택정비사업이란?</span>
+            </div>
+          </FadeInRightBigTitleDiv>
+        ) : (
+          ""
+        )}
+        {index === true ? (
+          <FadeInRightBigExplainDiv>
+            <div className="explainsqure">
+              <img src={ellipse} className="ellipse" alt="ellipse" />
+              <div className="h"></div>
+              <p>
+                2018년부터 시행된 &#60;빈집 및 소규모주택정
+                <br />
+                비에 관한 특례법&#62;에 따라 노후 단독주택 또<br />는 다세대
+                밀집지역의 주민들이 서로 합의해
+                <br /> 정부의 사업비 지원과 용적률 특혜를 받아
+                <br /> 새집을 짓는 사업입니다.
+                <br />
+                <br /> 인접한 2가구 이상만 합의해 신청하면 사업
+                <br />이 가능합니다.
+              </p>
+            </div>
+          </FadeInRightBigExplainDiv>
+        ) : (
+          ""
+        )}
 
         <img
           src={chat}

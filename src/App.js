@@ -18,21 +18,18 @@ export const Kakaochannel = () => {
 };
 
 function App() {
-  const [index, setIndex] = useState(null);
+  const [index, setIndex] = useState(false);
   const [isMount, setIsMount] = useState(true);
   const onLeave = (origin, destination, direction) => {
     //console.log("Leaving section " + setIndex(destination.index));
-    console.log("test start");
-    console.log("test start");
     if (direction === "down") {
-      setIndex(true);
-      setIsMount(true);
+      setIndex(false);
     }
   };
   const afterLoad = (origin, destination, direction) => {
-    // if (direction === "down") {
-    //   setIndex(direction);
-    // }
+    if (direction === "down") {
+      setIndex(true);
+    }
 
     console.log(index);
   };

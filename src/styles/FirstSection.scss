@@ -122,8 +122,8 @@
 @include media("<medium") {
   .FirstSectionleftSide {
     background-color: #ffffff;
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -153,8 +153,9 @@
       }
     }
     .explainsqure {
-      height: 25%;
       width: 100%;
+      height: 25vh;
+      top: 3.5vw;
       br {
         display: none;
       }
