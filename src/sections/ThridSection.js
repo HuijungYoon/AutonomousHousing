@@ -7,15 +7,15 @@ import { ellipse, chat, greenMouseImage } from "./CarouselSection";
 import {
   FadeInLeftBigDiv,
   FadeInRightBigTitleDiv,
-  FadeInRightBigExplainDiv
+  FadeInRightBigExplainDiv,
 } from "./FirstSection";
-const ThridSection = ({ index }) => {
+const ThridSection = ({ thridIndex }) => {
   const thridMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/thridsection_image1.png?alt=media&token=58a5cabe-529a-420c-b4d8-488acb722938";
   return (
     <>
       <div className="ThridSectionleftSide">
-        {index === true ? (
+        {thridIndex === true ? (
           <FadeInLeftBigDiv>
             <img src={thridMainImage} className="image1" alt="image1" />
           </FadeInLeftBigDiv>
@@ -32,7 +32,7 @@ const ThridSection = ({ index }) => {
       </div>
 
       <div className="ThridSectionrightSide">
-        {index === true ? (
+        {thridIndex === true ? (
           <FadeInRightBigTitleDiv>
             <div className="titlesqure">
               <span>용적률 상향</span>
@@ -41,7 +41,7 @@ const ThridSection = ({ index }) => {
         ) : (
           ""
         )}
-        {index === true ? (
+        {thridIndex === true ? (
           <FadeInRightBigExplainDiv>
             <div className="explainsqure">
               <img src={ellipse} className="ellipse" alt="chat" />

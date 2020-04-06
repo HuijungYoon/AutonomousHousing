@@ -7,15 +7,15 @@ import { greenMouseImage, ellipse, chat } from "./CarouselSection";
 import {
   FadeInRightBigDiv,
   FadeInLeftBigTitleDiv,
-  FadeInLeftBigExplainDiv
+  FadeInLeftBigExplainDiv,
 } from "./FirstSection";
-const FourthSection = ({ index }) => {
+const FourthSection = ({ fourthIndex }) => {
   const fourtMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/fourthSection_image1.png?alt=media&token=ebf5a11e-0bd7-48b1-85ef-90cd53c3bf1a";
   return (
     <>
       <div className="FourthSectionrightSide">
-        {index === true ? (
+        {fourthIndex === true ? (
           <FadeInRightBigDiv>
             <img src={fourtMainImage} className="image1" alt="image1" />
           </FadeInRightBigDiv>
@@ -32,7 +32,7 @@ const FourthSection = ({ index }) => {
       </div>
 
       <div className="FourthSectionleftSide">
-        {index === true ? (
+        {fourthIndex === true ? (
           <FadeInLeftBigTitleDiv>
             <div className="titlesqure">
               <span>신축 후 전량 LH매입</span>
@@ -41,7 +41,7 @@ const FourthSection = ({ index }) => {
         ) : (
           ""
         )}
-        {index === true ? (
+        {fourthIndex === true ? (
           <FadeInLeftBigExplainDiv>
             <div className="explainsqure">
               <img src={ellipse} className="ellipse" alt="chat" />

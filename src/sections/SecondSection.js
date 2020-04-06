@@ -4,24 +4,24 @@ import { Kakaochannel } from "../App";
 import {
   FadeInRightBigDiv,
   FadeInLeftBigTitleDiv,
-  FadeInLeftBigExplainDiv
+  FadeInLeftBigExplainDiv,
 } from "./FirstSection";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 import { greenMouseImage, chat, ellipse } from "./CarouselSection";
 import fadeInRightBig from "react-animations/lib/fadeInRightBig";
-const SecondSection = ({ index }) => {
-  //console.log(`page1 is ${index}`);
+const SecondSection = ({ secondIndex }) => {
+  //console.log(`page1 is ${secondIndex}`);
   const secondMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/secondsection_image1.png?alt=media&token=591cf8eb-8a35-4a2d-a724-7d61192099da";
   return (
     <>
       <div className="secondSectionrightSide">
-        {/* <Fade right big when={index}>
+        {/* <Fade right big when={secondIndex}>
           <img src={secondMainImage} className="image1" alt="image1" />
         </Fade> */}
 
-        {index === true ? (
+        {secondIndex === true ? (
           <FadeInRightBigDiv>
             <img src={secondMainImage} className="image1" alt="image1" />
           </FadeInRightBigDiv>
@@ -38,7 +38,7 @@ const SecondSection = ({ index }) => {
       </div>
 
       <div className="secondSectionleftSide">
-        {index === true ? (
+        {secondIndex === true ? (
           <FadeInLeftBigTitleDiv>
             <div className="titlesqure">
               <span>사업비 정부지원</span>
@@ -47,7 +47,7 @@ const SecondSection = ({ index }) => {
         ) : (
           ""
         )}
-        {index === true ? (
+        {secondIndex === true ? (
           <FadeInLeftBigExplainDiv>
             <div className="explainsqure">
               <img src={ellipse} className="ellipse" alt="chat" />

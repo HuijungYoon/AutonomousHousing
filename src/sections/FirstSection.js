@@ -37,7 +37,7 @@ export const FadeInLeftBigExplainDiv = styled.div`
   animation: 1.3s ${FadeInLeftBigAnimation};
 `;
 
-const FirstSection = ({ index, isMount }) => {
+const FirstSection = ({ index, isMount, firstIndex }) => {
   const firstMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/firstsection_image1-min.png?alt=media&token=a764b621-c8bc-4a7a-982f-323dd9fd6ed0";
   const greenMouseImage =
@@ -49,7 +49,7 @@ const FirstSection = ({ index, isMount }) => {
         {/* <Fade left big when={index}>
           <img src={firstMainImage} className="image1" alt="image1" />
         </Fade> */}
-        {index === true ? (
+        {firstIndex === true ? (
           <FadeInLeftBigDiv>
             <img src={firstMainImage} className="image1" alt="image1" />
           </FadeInLeftBigDiv>
@@ -88,7 +88,7 @@ const FirstSection = ({ index, isMount }) => {
             </p>
           </div>
         </Fade> */}
-        {index === true ? (
+        {firstIndex === true ? (
           <FadeInRightBigTitleDiv>
             <div className="titlesqure">
               <span>자율주택정비사업이란?</span>
@@ -97,7 +97,7 @@ const FirstSection = ({ index, isMount }) => {
         ) : (
           ""
         )}
-        {index === true ? (
+        {firstIndex === true ? (
           <FadeInRightBigExplainDiv>
             <div className="explainsqure">
               <img src={ellipse} className="ellipse" alt="ellipse" />

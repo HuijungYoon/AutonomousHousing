@@ -13,17 +13,45 @@ import FinalSection from "./sections/FinalSection";
 
 export const Kakaochannel = () => {
   window.Kakao.Channel.chat({
-    channelPublicId: "_nUzxhxb" // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
+    channelPublicId: "_nUzxhxb", // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
   });
 };
 
 function App() {
   const [index, setIndex] = useState(false);
-  const [isMount, setIsMount] = useState(true);
+  const [firstIndex, setFirstIndex] = useState(false);
+  const [secondIndex, setSecondIndex] = useState(false);
+  const [thridIndex, setThridIndex] = useState(false);
+  const [fourthIndex, setFourthIndex] = useState(false);
+  const [fifthIndex, setFifthIndex] = useState(false);
+  const [sixthIndex, setSixthIndex] = useState(false);
+  const [fianlIndex, setFinalIndex] = useState(false);
+
   const onLeave = (origin, destination, direction) => {
     //console.log("Leaving section " + setIndex(destination.index));
     if (direction === "down") {
       setIndex(false);
+    }
+    if (origin.index === 0) {
+      setFirstIndex(true);
+    }
+    if (origin.index === 1) {
+      setSecondIndex(true);
+    }
+    if (origin.index === 2) {
+      setThridIndex(true);
+    }
+    if (origin.index === 3) {
+      setFourthIndex(true);
+    }
+    if (origin.index === 4) {
+      setFifthIndex(true);
+    }
+    if (origin.index === 5) {
+      setSixthIndex(true);
+    }
+    if (origin.index === 6) {
+      setFinalIndex(true);
     }
   };
   const afterLoad = (origin, destination, direction) => {
@@ -63,13 +91,15 @@ function App() {
               <div className="section" onLoad={moveRightAutoPlay}>
                 {CarouselSection()}
               </div>
-              <div className="section">{FirstSection({ index, isMount })}</div>
-              <div className="section">{SecondSection({ index })}</div>
-              <div className="section">{ThridSection({ index })}</div>
-              <div className="section">{FourthSection({ index })}</div>
-              <div className="section">{FifthSection({ index })}</div>
-              <div className="section">{SixthSection({ index })}</div>
-              <div className="section">{FinalSection({ index })}</div>
+              <div className="section">
+                {FirstSection({ index, firstIndex })}
+              </div>
+              <div className="section">{SecondSection({ secondIndex })}</div>
+              <div className="section">{ThridSection({ thridIndex })}</div>
+              <div className="section">{FourthSection({ fourthIndex })}</div>
+              <div className="section">{FifthSection({ fifthIndex })}</div>
+              <div className="section">{SixthSection({ sixthIndex })}</div>
+              <div className="section">{FinalSection({ fianlIndex })}</div>
             </div>
           );
         }}

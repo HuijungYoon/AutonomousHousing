@@ -7,15 +7,15 @@ import { greenMouseImage, chat, ellipse } from "./CarouselSection";
 import {
   FadeInRightBigDiv,
   FadeInLeftBigTitleDiv,
-  FadeInLeftBigExplainDiv
+  FadeInLeftBigExplainDiv,
 } from "./FirstSection";
-const SixthSection = ({ index }) => {
+const SixthSection = ({ sixthIndex }) => {
   const sixthMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/sixthSection_image1.png?alt=media&token=916649d1-d7db-497a-a272-274b01be540d";
   return (
     <>
       <div className="SixthSectionrightSide">
-        {index === true ? (
+        {sixthIndex === true ? (
           <FadeInRightBigDiv>
             <img src={sixthMainImage} className="image1" alt="image1" />
           </FadeInRightBigDiv>
@@ -32,7 +32,7 @@ const SixthSection = ({ index }) => {
       </div>
 
       <div className="SixthSectionleftSide">
-        {index === true ? (
+        {sixthIndex === true ? (
           <FadeInLeftBigTitleDiv>
             <div className="titlesqure">
               <span>사업기간 1년</span>
@@ -42,7 +42,7 @@ const SixthSection = ({ index }) => {
           ""
         )}
 
-        {index === true ? (
+        {sixthIndex === true ? (
           <FadeInLeftBigExplainDiv>
             <div className="explainsqure">
               <img src={ellipse} className="ellipse" alt="chat" />

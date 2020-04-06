@@ -8,15 +8,15 @@ import {
   FadeInLeftBigDiv,
   FadeInRightBigTitleDiv,
   FadeInRightBigExplainDiv,
-  FadeInLeftBigExplainDiv
+  FadeInLeftBigExplainDiv,
 } from "./FirstSection";
-const FifthSection = ({ index }) => {
+const FifthSection = ({ fifthIndex }) => {
   const fifthMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/fifthSection_image1.png?alt=media&token=7da55445-c627-4171-891a-f24c5d55f7fc";
   return (
     <>
       <div className="FifthSectionleftSide">
-        {index === true ? (
+        {fifthIndex === true ? (
           <FadeInLeftBigDiv>
             <img src={fifthMainImage} className="image1" alt="image1" />
           </FadeInLeftBigDiv>
@@ -34,7 +34,7 @@ const FifthSection = ({ index }) => {
       </div>
 
       <div className="FifthSectionrightSide">
-        {index === true ? (
+        {fifthIndex === true ? (
           <FadeInRightBigTitleDiv>
             <div className="titlesqure">
               <span>주차장설치기준완화</span>
@@ -44,7 +44,7 @@ const FifthSection = ({ index }) => {
           ""
         )}
 
-        {index === true ? (
+        {fifthIndex === true ? (
           <FadeInRightBigExplainDiv>
             <div className="explainsqure">
               <img src={ellipse} className="ellipse" alt="chat" />

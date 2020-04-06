@@ -13,11 +13,11 @@ const FadeInDownDiv = styled.div`
   align-items: center;
 `;
 
-// <Bounce top cascade when={index}>
+// <Bounce top cascade when={fianlIndex}>
 
 // </Bounce>
 
-const FinalSection = ({ index }) => {
+const FinalSection = ({ fianlIndex }) => {
   const finalMainImage =
     "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/finalSection_image1.png?alt=media&token=feb54b37-e8bc-4f01-ac49-0648afd8c0e5";
   const footerlogo =
@@ -25,21 +25,21 @@ const FinalSection = ({ index }) => {
   return (
     <>
       <div className="FinalSection">
-        {index === true ? (
+        {fianlIndex === true ? (
           <FadeInDownDiv>
             <span>한국자율주택이 함께합니다</span>
           </FadeInDownDiv>
         ) : (
           ""
         )}
-        {index === true ? (
+        {fianlIndex === true ? (
           <FadeInDownDiv>
             <img src={finalMainImage} className="image1" alt="fianlImage" />
           </FadeInDownDiv>
         ) : (
           ""
         )}
-        {index === true ? (
+        {fianlIndex === true ? (
           <FadeInDownDiv>
             <div className="explainsqure">
               <img src={ellipse} className="ellipse" alt="ellipse" />
@@ -64,14 +64,14 @@ const FinalSection = ({ index }) => {
       </div>
 
       <div className="footersqure">
-        {index === true ? (
+        {fianlIndex === true ? (
           <FadeInDownDiv>
             <img src={footerlogo} className="footer-logo" alt="logo" />
           </FadeInDownDiv>
         ) : (
           ""
         )}
-        {index === true ? (
+        {fianlIndex === true ? (
           <FadeInDownDiv>
             <span>
               한국자율주택(주) | 대표 김지한 | 사업자등록번호 709-87-01524 |
@@ -81,14 +81,14 @@ const FinalSection = ({ index }) => {
         ) : (
           ""
         )}
-        {index === true ? (
+        {fianlIndex === true ? (
           <FadeInDownDiv>
             <span>이메일 jihank21@hanmail.net</span>
           </FadeInDownDiv>
         ) : (
           ""
         )}
-        {index === true ? (
+        {fianlIndex === true ? (
           <FadeInDownDiv>
             <span>
               서울특별시 구록구 디지털로31길 12 태평양물산 별관2층 넥스트데이
