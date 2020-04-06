@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 3.5%;
+    top: 3.5vh;
     // top: 3.5%;
     // left: 9%;
 
@@ -126,7 +126,9 @@
   }
 
   .secondSectionleftSide {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     float: none;
     height: 100%;
     display: block;
