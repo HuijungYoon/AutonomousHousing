@@ -91,7 +91,7 @@ const FinalSection = ({ fianlIndex }) => {
         {fianlIndex === true ? (
           <FadeInDownDiv>
             <span>
-              서울특별시 구록구 디지털로31길 12 태평양물산 별관2층 넥스트데이
+              서울특별시 구로구 디지털로31길 12 태평양물산 별관2층 넥스트데이
               84호
             </span>
           </FadeInDownDiv>
