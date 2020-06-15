@@ -110,7 +110,9 @@ const FirstSection = ({ index, isMount, firstIndex }) => {
                 <br /> 정부의 사업비 지원과 용적률 특혜를 받아
                 <br /> 새집을 짓는 사업입니다.
                 <br />
-                <br /> 인접한 2가구 이상만 합의해 신청하면 사업
+              </p>
+              <p>
+                인접한 2가구 이상만 합의해 신청하면 사업
                 <br />이 가능합니다.
               </p>
             </div>

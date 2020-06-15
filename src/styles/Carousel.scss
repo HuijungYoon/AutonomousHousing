@@ -3,9 +3,12 @@
   //  background-image: url("../images/carousel_image1.png");
   background-repeat: no-repeat;
   /* background-size: cover; */
-  background-size: 100% 100%;
+  background-position: center;
+  background-clip: content-box;
+
+  background-size: 768px 100%;
   @include media("<huge") {
-    width: 1024px;
+    width: 50%;
   }
   @include media("<large") {
     width: 768px;
@@ -18,7 +21,8 @@
 .secondSlide {
   // background-image: url("../images/carousel_image2.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: 768px 100%;
   width: 1440px;
   @include media("<huge") {
     width: 1024px;
@@ -33,7 +37,8 @@
 .thridSlide {
   //  background-image: url("../images/carousel_image3.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: 768px 100%;
   width: 1440px;
   @include media("<huge") {
     width: 1024px;
@@ -48,7 +53,8 @@
 .fourthSlide {
   // background-image: url("../images/carousel_image4.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: 768px 100%;
   width: 1440px;
   @include media("<huge") {
     width: 1024px;

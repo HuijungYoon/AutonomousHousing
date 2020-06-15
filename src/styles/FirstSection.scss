@@ -85,7 +85,7 @@
     //line-height: 41px;
     line-height: 1.45em;
     // display: flex;
-    display: inline-block;
+    display: block;
     align-items: center;
     text-align: center;
     color: #ffffff;
@@ -161,15 +161,14 @@
       height: 25vh;
       top: 3.5vw;
 
-      br {
-        display: none;
-      }
       .ellipse {
         display: none;
       }
       p {
-        font-size: 1em;
-        line-height: 1.2em;
+        font-size: 13px;
+      }
+      br {
+        display: inline;
       }
     }
     .FirstSection-chat {

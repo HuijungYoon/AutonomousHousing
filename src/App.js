@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 import "./style.css";
-import CarouselSection, { secionOneList } from "./sections/CarouselSection";
+import CarouselSection from "./sections/CarouselSection";
 import FirstSection from "./sections/FirstSection";
 import SecondSection from "./sections/SecondSection";
 import ThridSection from "./sections/ThridSection";
@@ -54,7 +54,7 @@ function App() {
       setFinalIndex(true);
     }
   };
-  const afterLoad = (origin, destination, direction) => {
+  const afterLoad = (direction) => {
     if (direction === "down") {
       setIndex(true);
     }
@@ -70,16 +70,12 @@ function App() {
     <>
       <ReactFullpage
         scrollOverflow={true}
-        // navigation={true}
-        // slidesNavigation={true}
         slidesNavPosition="bottom"
-        // sectionsColor={["orange", "purple", "green"]}
         scrollBar={false}
         onLeave={onLeave}
         controlArrows={false}
         afterLoad={afterLoad}
-        // responsiveHeight={1024}
-        render={({ state, fullpageApi }) => {
+        render={({ fullpageApi }) => {
           const moveRightAutoPlay = () => {
             setInterval(() => {
               fullpageApi.moveSlideRight();
