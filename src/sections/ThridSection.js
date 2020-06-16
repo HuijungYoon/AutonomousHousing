@@ -47,6 +47,7 @@ const ThridSection = ({ thridIndex }) => {
               <img src={ellipse} className="ellipse" alt="chat" />
               <div className="h"></div>
               <p>
+                <br/>
                 연면적이나 신축호수의 20% 이상을
                 <br />
                 신혼부부,청년주택으로 제공할경우

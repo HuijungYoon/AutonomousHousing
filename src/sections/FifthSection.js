@@ -50,8 +50,8 @@ const FifthSection = ({ fifthIndex }) => {
               <img src={ellipse} className="ellipse" alt="chat" />
               <div className="h" />
               <p>
-                인근의 주차장에 주차장 사용권을 확보하는
-                <br /> 경우 주차장 총수의 30%까지
+                인근의 주차장에 주차장 사용권을 
+                <br /> 확보하는 경우 주차장 총수의 30%까지
                 <br /> 주차장 설치 기준을 완화해줍니다.
                 <br />
               </p>

@@ -102,12 +102,13 @@ const FirstSection = ({ index, isMount, firstIndex }) => {
             <div className="explainsqure">
               <img src={ellipse} className="ellipse" alt="ellipse" />
               <div className="h"></div>
+              <br/>
               <p>
-                2018년부터 시행된 &#60;빈집 및 소규모주택정
-                <br />
-                비에 관한 특례법&#62;에 따라 노후 단독주택 또<br />는 다세대
-                밀집지역의 주민들이 서로 합의해
-                <br /> 정부의 사업비 지원과 용적률 특혜를 받아
+                2018년부터 시행된 <br/>
+                &#60;빈집 및 소규모주택정비에 관한 특례법&#62;에 <br />
+                따라 노후 단독주택 또는 다세대 밀집지역의 <br />
+                주민들이 서로 합의해 정부의 <br /> 
+                사업비 지원과 용적률 특혜를 받아
                 <br /> 새집을 짓는 사업입니다.
                 <br />
               </p>

@@ -24,7 +24,7 @@ const sectionOneData = [
     className: "firstSlide",
 
     backgroundImage:
-      "https://firebasestorage.googleapis.com/v0/b/freehouse-fae33.appspot.com/o/carousel_image1.png?alt=media&token=ae84c3de-18e9-49fb-984e-3a52b7e7b721",
+      "https://firebasestorage.googleapis.com/v0/b/freehouse-fae33.appspot.com/o/new_carousel_image1.jpg?alt=media&token=4f1fca07-6d25-4b70-8e35-fabd09ecef67",
     title: "한국자율주택이 함께합니다!",
     subTitle: "오래된 주택을 보유하고 계신다면",
   },
@@ -33,7 +33,7 @@ const sectionOneData = [
     className: "secondSlide",
 
     backgroundImage:
-      "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/carousel_image2.png?alt=media&token=3eb7e2a8-8623-43c4-8c5a-df070c8af8cf",
+      "https://firebasestorage.googleapis.com/v0/b/freehouse-fae33.appspot.com/o/new_carousel_image2.jpg?alt=media&token=151908c4-f905-4c09-a1c8-77ca66c86505",
     title: "오래되고 낡은 집, 고민이시죠?",
     subTitle: "오래된 주택을 보유하고 계신다면",
   },
@@ -41,7 +41,7 @@ const sectionOneData = [
     id: 3,
     className: "thridSlide",
     backgroundImage:
-      "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/carousel_image3.png?alt=media&token=b2b6ec01-1ed3-48df-8047-0df0162734b0",
+      "https://firebasestorage.googleapis.com/v0/b/freehouse-fae33.appspot.com/o/new_carousel_image3.jpg?alt=media&token=39d1572c-6e8d-430f-b274-29f4ca1a706f",
     title: "자율주택정비사업을 신청하세요",
     subTitle: "오래된 주택을 보유하고 계신다면",
   },
@@ -50,7 +50,7 @@ const sectionOneData = [
     id: 4,
     className: "fourthSlide",
     backgroundImage:
-      "https://firebasestorage.googleapis.com/v0/b/houseproject-ca3a0.appspot.com/o/carousel_image4.png?alt=media&token=e987988f-a92c-4af4-a194-b34053120f41",
+      "https://firebasestorage.googleapis.com/v0/b/freehouse-fae33.appspot.com/o/new_carousel_image4.jpg?alt=media&token=f8883e72-f2d0-424c-a956-6a2a3d3d8144",
     title: "정부가 사업비를 지원합니다",
     subTitle: "오래된 주택을 보유하고 계신다면",
   },

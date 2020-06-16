@@ -53,8 +53,8 @@ const SecondSection = ({ secondIndex }) => {
               <img src={ellipse} className="ellipse" alt="chat" />
               <div className="h"></div>
               <p>
+              <br/>
                 자율주택정비사업의 금융지원
-                <br />
                 <br /> 융자대상 : 공사비, 이주비, 기존대출상환비 등 전체 사업비
                 <br /> 융자기간 : 최장 준공후 10년
                 <br /> 지원금리 : 연 1.5%
